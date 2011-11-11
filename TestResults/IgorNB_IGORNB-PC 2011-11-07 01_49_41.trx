@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="a26c1ab8-7eec-4b33-8902-fd1daaf67848" name="IgorNB@IGORNB-PC 2011-11-07 01:49:41" runUser="IgorNB-PC\IgorNB" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="27f7cbb2-2391-46ed-93e5-459bf1a33da9">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="IgorNB_IGORNB-PC 2011-11-07 01_49_41">
+      <DeploymentItem filename="C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\PROJETO_FINAL_LC\bin\Debug\PROJETO_FINAL_LC.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-11-07T01:49:41.8490356-02:00" queuing="2011-11-07T01:49:41.8570361-02:00" start="2011-11-07T01:49:41.8770372-02:00" finish="2011-11-07T01:49:42.3130621-02:00" />
+  <ResultSummary outcome="Warning">
+    <Counters total="4" executed="4" passed="4" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="IGORNB-PC" outcome="Warning" timestamp="2011-11-07T01:49:41.8560360-02:00">
+        <Text>Deployment is currently disabled. The deployment item 'PROJETO_FINAL_LC.exe' on test 'ProjetoFinalTest.VideoRegistrationFormTest.updateDurationTest2' was not deployed.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="updateDurationTest2" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\projetofinaltest\bin\debug\projetofinaltest.dll" id="cef5462b-677f-ee4d-fa4b-f480e73c186e">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="6796cbae-e99d-4a59-bc33-5b76c14c50fc" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/ProjetoFinalTest/bin/Debug/ProjetoFinalTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjetoFinalTest.VideoRegistrationFormTest, ProjetoFinalTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="updateDurationTest2" />
+    </UnitTest>
+    <UnitTest name="updateDurationTest3" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\projetofinaltest\bin\debug\projetofinaltest.dll" id="f0a4a7db-fa19-bdeb-a544-a87d3816a36b">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="8f725123-ed33-4696-a7f1-f941c43599d5" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/ProjetoFinalTest/bin/Debug/ProjetoFinalTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjetoFinalTest.VideoRegistrationFormTest, ProjetoFinalTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="updateDurationTest3" />
+    </UnitTest>
+    <UnitTest name="updateDurationTest1" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\projetofinaltest\bin\debug\projetofinaltest.dll" id="c17a348b-c396-14df-a2de-b620e12493d5">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="b3d064e1-e79d-4d7d-94a6-faf46eadeda2" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/ProjetoFinalTest/bin/Debug/ProjetoFinalTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjetoFinalTest.VideoRegistrationFormTest, ProjetoFinalTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="updateDurationTest1" />
+    </UnitTest>
+    <UnitTest name="updateDurationTest4" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\projetofinaltest\bin\debug\projetofinaltest.dll" id="3fd08e7d-75f1-86ce-4865-9c711005d6ea">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="c0aa36c3-2d7c-45b2-a5b3-d8854123f8e2" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/ProjetoFinalTest/bin/Debug/ProjetoFinalTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjetoFinalTest.VideoRegistrationFormTest, ProjetoFinalTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="updateDurationTest4" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="3fd08e7d-75f1-86ce-4865-9c711005d6ea" executionId="c0aa36c3-2d7c-45b2-a5b3-d8854123f8e2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c17a348b-c396-14df-a2de-b620e12493d5" executionId="b3d064e1-e79d-4d7d-94a6-faf46eadeda2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cef5462b-677f-ee4d-fa4b-f480e73c186e" executionId="6796cbae-e99d-4a59-bc33-5b76c14c50fc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f0a4a7db-fa19-bdeb-a544-a87d3816a36b" executionId="8f725123-ed33-4696-a7f1-f941c43599d5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c0aa36c3-2d7c-45b2-a5b3-d8854123f8e2" testId="3fd08e7d-75f1-86ce-4865-9c711005d6ea" testName="updateDurationTest4" computerName="IGORNB-PC" duration="00:00:00.0409454" startTime="2011-11-07T01:49:41.8940382-02:00" endTime="2011-11-07T01:49:42.1590533-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c0aa36c3-2d7c-45b2-a5b3-d8854123f8e2">
+    </UnitTestResult>
+    <UnitTestResult executionId="b3d064e1-e79d-4d7d-94a6-faf46eadeda2" testId="c17a348b-c396-14df-a2de-b620e12493d5" testName="updateDurationTest1" computerName="IGORNB-PC" duration="00:00:00.0038995" startTime="2011-11-07T01:49:42.1620535-02:00" endTime="2011-11-07T01:49:42.1720541-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b3d064e1-e79d-4d7d-94a6-faf46eadeda2">
+    </UnitTestResult>
+    <UnitTestResult executionId="6796cbae-e99d-4a59-bc33-5b76c14c50fc" testId="cef5462b-677f-ee4d-fa4b-f480e73c186e" testName="updateDurationTest2" computerName="IGORNB-PC" duration="00:00:00.0039290" startTime="2011-11-07T01:49:42.1750542-02:00" endTime="2011-11-07T01:49:42.1840548-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6796cbae-e99d-4a59-bc33-5b76c14c50fc">
+    </UnitTestResult>
+    <UnitTestResult executionId="8f725123-ed33-4696-a7f1-f941c43599d5" testId="f0a4a7db-fa19-bdeb-a544-a87d3816a36b" testName="updateDurationTest3" computerName="IGORNB-PC" duration="00:00:00.0065086" startTime="2011-11-07T01:49:42.1880550-02:00" endTime="2011-11-07T01:49:42.2020558-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8f725123-ed33-4696-a7f1-f941c43599d5">
+    </UnitTestResult>
+  </Results>
+</TestRun>

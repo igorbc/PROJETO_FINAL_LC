@@ -1,0 +1,9 @@
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\bin\Debug\TestProjetoFinal.dll
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\bin\Debug\TestProjetoFinal.pdb
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\bin\Debug\PROJETO_FINAL_LC.exe
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\bin\Debug\PROJETO_FINAL_LC.pdb
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\bin\Debug\PROJETO_FINAL_LC_Accessor.exe
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\bin\Debug\PROJETO_FINAL_LC_Accessor.pdb
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\obj\Debug\TestProjetoFinal.dll
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\obj\Debug\TestProjetoFinal.pdb

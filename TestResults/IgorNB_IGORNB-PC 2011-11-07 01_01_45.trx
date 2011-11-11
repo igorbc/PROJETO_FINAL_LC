@@ -1,0 +1,876 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7e628996-0df0-436c-962c-b5059a7e0ad8" name="IgorNB@IGORNB-PC 2011-11-07 01:01:45" runUser="IgorNB-PC\IgorNB" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="27f7cbb2-2391-46ed-93e5-459bf1a33da9">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="IgorNB_IGORNB-PC 2011-11-07 01_01_45">
+      <DeploymentItem filename="C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\PROJETO_FINAL_LC\bin\Debug\PROJETO_FINAL_LC.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-11-07T01:01:45.2935060-02:00" queuing="2011-11-07T01:01:48.7327027-02:00" start="2011-11-07T01:01:48.8847114-02:00" finish="2011-11-07T01:02:14.4071712-02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="52" executed="52" error="0" failed="9" timeout="0" aborted="0" inconclusive="43" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="IGORNB-PC" outcome="Warning" timestamp="2011-11-07T01:01:47.5646359-02:00">
+        <Text>Deployment is currently disabled. The deployment item 'PROJETO_FINAL_LC.exe' on test 'TestProjetoFinal.RegistrationFormTest.createTheUserTest' was not deployed.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="createTheUserTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="3738a06c-82da-5f67-8c7b-6bd53e1000bf">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="745eb8fb-f9f3-4de7-9717-ccad05297456" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.RegistrationFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="createTheUserTest" />
+    </UnitTest>
+    <UnitTest name="InitializeComponentTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="97d62ba4-e681-dead-82e1-f94bd19f7de1">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="76c97282-0034-4816-8001-34c9698e3e70" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.MainFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InitializeComponentTest" />
+    </UnitTest>
+    <UnitTest name="InitializeComponentTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="20d2bdbc-66bc-2f79-5c59-b9641b27a087">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="c3a1039e-bdb1-4828-b0e2-0949493c492a" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.ConsultFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InitializeComponentTest" />
+    </UnitTest>
+    <UnitTest name="InitializeComponentTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="78a9e7e0-591d-b27c-5cfb-71c4fe754d6a">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="51f26ca6-0b03-453a-9384-9b83e7961aa3" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.LoginFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InitializeComponentTest" />
+    </UnitTest>
+    <UnitTest name="cbbHigherLimit_SelectedIndexChangedTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="4ddece84-9b72-d38b-ac6f-57260319bc39">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="79af4240-1f90-4e8f-8ba4-c7dfc0122b5c" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.RegistrationFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="cbbHigherLimit_SelectedIndexChangedTest" />
+    </UnitTest>
+    <UnitTest name="LoginForm_LoadTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="4623de58-954e-18dc-cc67-a7cced65b82b">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="cd361a37-94c3-44c0-a629-171d8139e9c3" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.LoginFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LoginForm_LoadTest" />
+    </UnitTest>
+    <UnitTest name="RegistrationFormConstructorTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="bc4efc4d-d4f6-1b26-9e06-57b983ae4c39">
+      <Execution id="119e5560-e308-48f5-af7a-ac6b06453803" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.RegistrationFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RegistrationFormConstructorTest" />
+    </UnitTest>
+    <UnitTest name="btnSaveScreening_ClickTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="bd016f34-6464-3c07-c67f-56d7a952ac71">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="1222d325-8636-4e5c-807c-c764823d420c" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.AddScreeningFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="btnSaveScreening_ClickTest" />
+    </UnitTest>
+    <UnitTest name="DisposeTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="1ccf1f59-34ed-a1c2-3c46-b8dad753e6e7">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="8c0ae80c-cb7b-4d05-88f1-b8f71d35bf73" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.RegistrationFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DisposeTest" />
+    </UnitTest>
+    <UnitTest name="getLoginTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="204a28eb-2032-d2ff-ede1-9b1693e0f8c4">
+      <Execution id="4808603e-e86e-4d2d-ad3f-33dc49b1358e" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.UserTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getLoginTest" />
+    </UnitTest>
+    <UnitTest name="getEvaluetionMethodInfoTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="63c565ea-3ba0-d746-d43d-3f78984f6131">
+      <Execution id="4598a6fb-6c41-4107-a193-a60be6626d76" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.UserTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getEvaluetionMethodInfoTest" />
+    </UnitTest>
+    <UnitTest name="MainForm_ShownTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="58575564-1881-a085-1d4d-f83f776e8907">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="927716ac-89c0-46d9-8ec1-0689bf9800c5" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.MainFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MainForm_ShownTest" />
+    </UnitTest>
+    <UnitTest name="UserConstructorTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="4b0b8f3e-a29f-d865-1219-4110c30edd7c">
+      <Execution id="13e72d42-935f-42ba-8217-a147b3cb28ff" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.UserTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UserConstructorTest" />
+    </UnitTest>
+    <UnitTest name="MainTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="6a719aaa-1525-00a0-e521-819e52d378ad">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="337aa116-66d5-4eff-b80b-09152f6e3d39" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.ProgramTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MainTest" />
+    </UnitTest>
+    <UnitTest name="EvaluetionMethodInfoConstructorTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="1e631b0f-d661-8b44-2a4d-95e1d54a04c5">
+      <Execution id="39ee27fb-ea45-4b4b-86d1-6015b122666e" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.EvaluetionMethodInfoTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EvaluetionMethodInfoConstructorTest" />
+    </UnitTest>
+    <UnitTest name="emptyFieldsWarningTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="bad33610-3f8d-c60b-1fad-27574a744242">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="9bb182d9-7dea-488a-915c-6f41492e84fd" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.LoginFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="emptyFieldsWarningTest" />
+    </UnitTest>
+    <UnitTest name="getNameTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="0a177b69-7f59-508e-8453-5f828c8c0ae6">
+      <Execution id="bf59c46b-d7c3-4c32-b725-87a3dac44b0e" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.UserTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getNameTest" />
+    </UnitTest>
+    <UnitTest name="AddScreeningFormConstructorTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="ff138780-4f5b-f3d9-9033-edf87270246d">
+      <Execution id="a6ff717a-6108-4a99-85f1-862d235950f2" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.AddScreeningFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddScreeningFormConstructorTest" />
+    </UnitTest>
+    <UnitTest name="getHigherLimitTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="8b8c4ba6-973f-c429-1a88-3e900a2f79f3">
+      <Execution id="2da60b0e-fc3a-499b-aa7f-5b45ad473185" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.EvaluetionMethodInfoTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getHigherLimitTest" />
+    </UnitTest>
+    <UnitTest name="ConsultFormConstructorTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="05de1f32-3086-2114-57f2-9741196fd179">
+      <Execution id="5c350746-dbae-4fd5-8f31-81278e5ec891" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.ConsultFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConsultFormConstructorTest" />
+    </UnitTest>
+    <UnitTest name="RegistrationForm_LoadTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="6323854b-7abf-f001-1533-068d25eb8bc3">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="adba4f7b-e868-4f4d-b232-255a6307797d" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.RegistrationFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RegistrationForm_LoadTest" />
+    </UnitTest>
+    <UnitTest name="VideoConstructorTest1" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="1a498e07-9a4b-428c-760a-4cc0e154ccbd">
+      <Execution id="6ba0fa3c-6d92-4a05-a252-aeb3b1ba251a" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.VideoTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="VideoConstructorTest1" />
+    </UnitTest>
+    <UnitTest name="DisposeTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="da0e9692-ebb1-3f07-3ce6-482bd2c69d5e">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="4acf3052-0cb2-4e9c-9eba-d6976677eedd" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.MainFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DisposeTest" />
+    </UnitTest>
+    <UnitTest name="checksIfUserAlreadyExistsTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="73ca9578-62b4-59f0-889e-0ad2066afd34">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="72d52b0d-e43c-498f-9d4e-d8e5d66e5763" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.LoginFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="checksIfUserAlreadyExistsTest" />
+    </UnitTest>
+    <UnitTest name="getStepTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="b7109bd8-d369-c293-7f2d-b187faa7442c">
+      <Execution id="87a528bc-4f8d-4fd5-b63c-70962737a3a8" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.EvaluetionMethodInfoTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getStepTest" />
+    </UnitTest>
+    <UnitTest name="InitializeComponentTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="96ef4a9f-b758-faf5-0996-9c48b88881fc">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="d987f8f2-7a46-40bd-a192-17dbbd18bdf2" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.AddScreeningFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InitializeComponentTest" />
+    </UnitTest>
+    <UnitTest name="btnConsult_ClickTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="8e739bc3-d837-bd9d-cb35-79ca4e546f55">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="a0f4c164-b650-4572-b256-ce44924bd9a3" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.MainFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="btnConsult_ClickTest" />
+    </UnitTest>
+    <UnitTest name="MainForm_LoadTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="249a2159-d11b-c1dd-6e0d-e750bf504d29">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="ec6a3a54-7ee7-40cb-9757-8b6b9e37b77a" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.MainFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MainForm_LoadTest" />
+    </UnitTest>
+    <UnitTest name="SessionConstructorTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="b322669e-f5a0-3259-af76-8b524adb5045">
+      <Execution id="04b5931a-fe80-4b7d-a3ee-4383cbbb674a" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.SessionTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SessionConstructorTest" />
+    </UnitTest>
+    <UnitTest name="ConsultForm_LoadTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="9b35b54b-bc76-9e90-d6e2-b3c937a96aed">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="287e199d-7e11-4400-9798-635060917baa" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.ConsultFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConsultForm_LoadTest" />
+    </UnitTest>
+    <UnitTest name="MainFormConstructorTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="672d4cfa-c843-37d6-e02b-5e6bf1942132">
+      <Execution id="34fe1aa8-5055-437a-bd13-e41bd99b724b" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.MainFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MainFormConstructorTest" />
+    </UnitTest>
+    <UnitTest name="btnLogIn_ClickTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="7563c85f-afa5-4718-5c7e-11056048d4a7">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="50aeb790-f988-407b-b0d2-b315934f17d0" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.LoginFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="btnLogIn_ClickTest" />
+    </UnitTest>
+    <UnitTest name="InitializeComponentTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="dfcd767e-9867-94e0-7bdb-71fd75fa68db">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="cf01fef8-dea8-442a-9ed9-37977424355b" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.RegistrationFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InitializeComponentTest" />
+    </UnitTest>
+    <UnitTest name="AddScreeningForm_LoadTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="a0885cbd-813c-d323-9785-c019c57e161f">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="d26549d4-ce2d-4492-9fa5-ee8516bc6d7d" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.AddScreeningFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddScreeningForm_LoadTest" />
+    </UnitTest>
+    <UnitTest name="LoginFormConstructorTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="6e4237d1-e23b-e970-2fb3-10e8a4a7cf14">
+      <Execution id="5c798658-86dd-44a4-9fc9-17bf4e89320e" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.LoginFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LoginFormConstructorTest" />
+    </UnitTest>
+    <UnitTest name="UpdateConsultTypeInfoTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="64659578-cfc2-19b6-3433-44d5ee4ec407">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="7f98e439-6ee1-4cf0-86c1-884dce9f7d4f" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.ConsultFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateConsultTypeInfoTest" />
+    </UnitTest>
+    <UnitTest name="VideoConstructorTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="235e5b87-15ee-c0bd-ee94-2b7b7aac716a">
+      <Execution id="054680b1-360c-4566-b7d1-b67e9ec6b282" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.VideoTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="VideoConstructorTest" />
+    </UnitTest>
+    <UnitTest name="btnFinishRegistration_ClickTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="f4dff3c1-c204-cb56-e644-3e194e2cd7e3">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="6db5a952-8704-4346-8ba4-11242222c043" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.RegistrationFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="btnFinishRegistration_ClickTest" />
+    </UnitTest>
+    <UnitTest name="DisposeTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="15f007e4-95a1-4418-9672-d57e9c297e17">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="b423d8d8-fca0-48c7-9fa8-d03527ae26c7" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.AddScreeningFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DisposeTest" />
+    </UnitTest>
+    <UnitTest name="btnRegisterVideo_ClickTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="94d291cc-d7d4-2a4c-4bf3-103a1d23a660">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="f3c2e1b2-8e2c-48d5-b480-47218b7dd592" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.AddScreeningFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="btnRegisterVideo_ClickTest" />
+    </UnitTest>
+    <UnitTest name="LoginForm_ShownTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="6ba5e6fe-6f95-e350-2c2e-bb7aa4cf3c54">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="a55c8d3a-8f8b-4fe6-b1ad-ddcf76ea3148" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.LoginFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LoginForm_ShownTest" />
+    </UnitTest>
+    <UnitTest name="getUserNameTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="8c3789b2-c0e9-fa46-3a10-5912e4b6c02e">
+      <Execution id="784ebac0-7596-4a56-9f06-2dab844d24e9" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.LoginFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getUserNameTest" />
+    </UnitTest>
+    <UnitTest name="DisposeTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="d8156586-860e-e90d-09ca-8f9c36bfd349">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="3aa345e9-2d26-4c9a-8294-05e7e5cdb11b" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.ConsultFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DisposeTest" />
+    </UnitTest>
+    <UnitTest name="RegistrationForm_ShownTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="34974b1b-5ad4-4c92-bf73-ce7323eb4b6b">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="ee64fae8-c78a-43cb-9c25-f812b5d24114" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.RegistrationFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RegistrationForm_ShownTest" />
+    </UnitTest>
+    <UnitTest name="setEvaluetionMethodInfoTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="5835c392-3294-9db4-2b86-4df080373a2b">
+      <Execution id="ec67ac97-784e-4b98-8b17-6f4893a3b8c6" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.UserTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="setEvaluetionMethodInfoTest" />
+    </UnitTest>
+    <UnitTest name="DisposeTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="ef156605-a738-d04c-9010-9b39a84e860b">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="974d8562-c003-48c1-8d69-1991de65e1b5" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.LoginFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DisposeTest" />
+    </UnitTest>
+    <UnitTest name="btnAddScreening_ClickTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="27e6085a-9d94-d6fe-e1ed-ab3bf53aed5e">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="89d09d4e-f5fa-45cd-b5d3-68bff1845e53" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.MainFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="btnAddScreening_ClickTest" />
+    </UnitTest>
+    <UnitTest name="getUserTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="f3bdd7f3-a607-4e6b-d55b-b12f1443bb08">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="c9a7094b-1e8f-46c4-aebe-a576d994a15f" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.MainFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getUserTest" />
+    </UnitTest>
+    <UnitTest name="btnRegistration_ClickTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="d8de2281-75d6-adc1-3aca-c18f7a36e43d">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="c5b3a2b6-a4e0-4ac8-9414-407a8521587b" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.LoginFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="btnRegistration_ClickTest" />
+    </UnitTest>
+    <UnitTest name="rbtnConsultType_CheckedChangedTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="fdbb5536-24ea-649c-682c-26b07bab9558">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="ecc09948-0779-4ec8-99d2-e501607ca3ff" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.ConsultFormTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="rbtnConsultType_CheckedChangedTest" />
+    </UnitTest>
+    <UnitTest name="getLowerLimitTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="671111ae-6fd7-9f30-756c-cfb9e34278f4">
+      <Execution id="ee2fb0e3-233a-4808-94cb-bc57ea4ab291" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.EvaluetionMethodInfoTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getLowerLimitTest" />
+    </UnitTest>
+    <UnitTest name="getEvaluetionMethodTest" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\testprojetofinal\bin\debug\testprojetofinal.dll" id="6fae32ee-c621-b4b2-0c60-b7252807151b">
+      <Execution id="492efe8b-1145-4ae0-a610-751412dd823a" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/TestProjetoFinal/bin/Debug/TestProjetoFinal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjetoFinal.EvaluetionMethodInfoTest, TestProjetoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getEvaluetionMethodTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="05de1f32-3086-2114-57f2-9741196fd179" executionId="5c350746-dbae-4fd5-8f31-81278e5ec891" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0a177b69-7f59-508e-8453-5f828c8c0ae6" executionId="bf59c46b-d7c3-4c32-b725-87a3dac44b0e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="15f007e4-95a1-4418-9672-d57e9c297e17" executionId="b423d8d8-fca0-48c7-9fa8-d03527ae26c7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1a498e07-9a4b-428c-760a-4cc0e154ccbd" executionId="6ba0fa3c-6d92-4a05-a252-aeb3b1ba251a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1ccf1f59-34ed-a1c2-3c46-b8dad753e6e7" executionId="8c0ae80c-cb7b-4d05-88f1-b8f71d35bf73" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1e631b0f-d661-8b44-2a4d-95e1d54a04c5" executionId="39ee27fb-ea45-4b4b-86d1-6015b122666e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="204a28eb-2032-d2ff-ede1-9b1693e0f8c4" executionId="4808603e-e86e-4d2d-ad3f-33dc49b1358e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="20d2bdbc-66bc-2f79-5c59-b9641b27a087" executionId="c3a1039e-bdb1-4828-b0e2-0949493c492a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="235e5b87-15ee-c0bd-ee94-2b7b7aac716a" executionId="054680b1-360c-4566-b7d1-b67e9ec6b282" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="249a2159-d11b-c1dd-6e0d-e750bf504d29" executionId="ec6a3a54-7ee7-40cb-9757-8b6b9e37b77a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="27e6085a-9d94-d6fe-e1ed-ab3bf53aed5e" executionId="89d09d4e-f5fa-45cd-b5d3-68bff1845e53" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="34974b1b-5ad4-4c92-bf73-ce7323eb4b6b" executionId="ee64fae8-c78a-43cb-9c25-f812b5d24114" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3738a06c-82da-5f67-8c7b-6bd53e1000bf" executionId="745eb8fb-f9f3-4de7-9717-ccad05297456" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4623de58-954e-18dc-cc67-a7cced65b82b" executionId="cd361a37-94c3-44c0-a629-171d8139e9c3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4b0b8f3e-a29f-d865-1219-4110c30edd7c" executionId="13e72d42-935f-42ba-8217-a147b3cb28ff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4ddece84-9b72-d38b-ac6f-57260319bc39" executionId="79af4240-1f90-4e8f-8ba4-c7dfc0122b5c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5835c392-3294-9db4-2b86-4df080373a2b" executionId="ec67ac97-784e-4b98-8b17-6f4893a3b8c6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="58575564-1881-a085-1d4d-f83f776e8907" executionId="927716ac-89c0-46d9-8ec1-0689bf9800c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6323854b-7abf-f001-1533-068d25eb8bc3" executionId="adba4f7b-e868-4f4d-b232-255a6307797d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="63c565ea-3ba0-d746-d43d-3f78984f6131" executionId="4598a6fb-6c41-4107-a193-a60be6626d76" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="64659578-cfc2-19b6-3433-44d5ee4ec407" executionId="7f98e439-6ee1-4cf0-86c1-884dce9f7d4f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="671111ae-6fd7-9f30-756c-cfb9e34278f4" executionId="ee2fb0e3-233a-4808-94cb-bc57ea4ab291" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="672d4cfa-c843-37d6-e02b-5e6bf1942132" executionId="34fe1aa8-5055-437a-bd13-e41bd99b724b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6a719aaa-1525-00a0-e521-819e52d378ad" executionId="337aa116-66d5-4eff-b80b-09152f6e3d39" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6ba5e6fe-6f95-e350-2c2e-bb7aa4cf3c54" executionId="a55c8d3a-8f8b-4fe6-b1ad-ddcf76ea3148" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6e4237d1-e23b-e970-2fb3-10e8a4a7cf14" executionId="5c798658-86dd-44a4-9fc9-17bf4e89320e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6fae32ee-c621-b4b2-0c60-b7252807151b" executionId="492efe8b-1145-4ae0-a610-751412dd823a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="73ca9578-62b4-59f0-889e-0ad2066afd34" executionId="72d52b0d-e43c-498f-9d4e-d8e5d66e5763" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7563c85f-afa5-4718-5c7e-11056048d4a7" executionId="50aeb790-f988-407b-b0d2-b315934f17d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="78a9e7e0-591d-b27c-5cfb-71c4fe754d6a" executionId="51f26ca6-0b03-453a-9384-9b83e7961aa3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8b8c4ba6-973f-c429-1a88-3e900a2f79f3" executionId="2da60b0e-fc3a-499b-aa7f-5b45ad473185" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8c3789b2-c0e9-fa46-3a10-5912e4b6c02e" executionId="784ebac0-7596-4a56-9f06-2dab844d24e9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8e739bc3-d837-bd9d-cb35-79ca4e546f55" executionId="a0f4c164-b650-4572-b256-ce44924bd9a3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="94d291cc-d7d4-2a4c-4bf3-103a1d23a660" executionId="f3c2e1b2-8e2c-48d5-b480-47218b7dd592" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="96ef4a9f-b758-faf5-0996-9c48b88881fc" executionId="d987f8f2-7a46-40bd-a192-17dbbd18bdf2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="97d62ba4-e681-dead-82e1-f94bd19f7de1" executionId="76c97282-0034-4816-8001-34c9698e3e70" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9b35b54b-bc76-9e90-d6e2-b3c937a96aed" executionId="287e199d-7e11-4400-9798-635060917baa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a0885cbd-813c-d323-9785-c019c57e161f" executionId="d26549d4-ce2d-4492-9fa5-ee8516bc6d7d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b322669e-f5a0-3259-af76-8b524adb5045" executionId="04b5931a-fe80-4b7d-a3ee-4383cbbb674a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b7109bd8-d369-c293-7f2d-b187faa7442c" executionId="87a528bc-4f8d-4fd5-b63c-70962737a3a8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bad33610-3f8d-c60b-1fad-27574a744242" executionId="9bb182d9-7dea-488a-915c-6f41492e84fd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bc4efc4d-d4f6-1b26-9e06-57b983ae4c39" executionId="119e5560-e308-48f5-af7a-ac6b06453803" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bd016f34-6464-3c07-c67f-56d7a952ac71" executionId="1222d325-8636-4e5c-807c-c764823d420c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d8156586-860e-e90d-09ca-8f9c36bfd349" executionId="3aa345e9-2d26-4c9a-8294-05e7e5cdb11b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d8de2281-75d6-adc1-3aca-c18f7a36e43d" executionId="c5b3a2b6-a4e0-4ac8-9414-407a8521587b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="da0e9692-ebb1-3f07-3ce6-482bd2c69d5e" executionId="4acf3052-0cb2-4e9c-9eba-d6976677eedd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dfcd767e-9867-94e0-7bdb-71fd75fa68db" executionId="cf01fef8-dea8-442a-9ed9-37977424355b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ef156605-a738-d04c-9010-9b39a84e860b" executionId="974d8562-c003-48c1-8d69-1991de65e1b5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f3bdd7f3-a607-4e6b-d55b-b12f1443bb08" executionId="c9a7094b-1e8f-46c4-aebe-a576d994a15f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4dff3c1-c204-cb56-e644-3e194e2cd7e3" executionId="6db5a952-8704-4346-8ba4-11242222c043" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fdbb5536-24ea-649c-682c-26b07bab9558" executionId="ecc09948-0779-4ec8-99d2-e501607ca3ff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ff138780-4f5b-f3d9-9033-edf87270246d" executionId="a6ff717a-6108-4a99-85f1-862d235950f2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5c350746-dbae-4fd5-8f31-81278e5ec891" testId="05de1f32-3086-2114-57f2-9741196fd179" testName="ConsultFormConstructorTest" computerName="IGORNB-PC" duration="00:00:00.2615618" startTime="2011-11-07T01:01:48.9517153-02:00" endTime="2011-11-07T01:01:49.9837743-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5c350746-dbae-4fd5-8f31-81278e5ec891">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   em TestProjetoFinal.ConsultFormTest.ConsultFormConstructorTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\ConsultFormTest.cs:linha 75
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bf59c46b-d7c3-4c32-b725-87a3dac44b0e" testId="0a177b69-7f59-508e-8453-5f828c8c0ae6" testName="getNameTest" computerName="IGORNB-PC" duration="00:00:00.0030341" startTime="2011-11-07T01:01:49.9857744-02:00" endTime="2011-11-07T01:01:49.9987752-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bf59c46b-d7c3-4c32-b725-87a3dac44b0e">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   em TestProjetoFinal.UserTest.getNameTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\UserTest.cs:linha 128
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b423d8d8-fca0-48c7-9fa8-d03527ae26c7" testId="15f007e4-95a1-4418-9672-d57e9c297e17" testName="DisposeTest" computerName="IGORNB-PC" duration="00:00:00.0237588" startTime="2011-11-07T01:01:50.0127760-02:00" endTime="2011-11-07T01:01:50.0427777-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b423d8d8-fca0-48c7-9fa8-d03527ae26c7">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.AddScreeningFormTest.DisposeTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\AddScreeningFormTest.cs:linha 101
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6ba0fa3c-6d92-4a05-a252-aeb3b1ba251a" testId="1a498e07-9a4b-428c-760a-4cc0e154ccbd" testName="VideoConstructorTest1" computerName="IGORNB-PC" duration="00:00:00.0017242" startTime="2011-11-07T01:01:50.0447778-02:00" endTime="2011-11-07T01:01:50.0527783-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6ba0fa3c-6d92-4a05-a252-aeb3b1ba251a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   em TestProjetoFinal.VideoTest.VideoConstructorTest1() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\VideoTest.cs:linha 99
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8c0ae80c-cb7b-4d05-88f1-b8f71d35bf73" testId="1ccf1f59-34ed-a1c2-3c46-b8dad753e6e7" testName="DisposeTest" computerName="IGORNB-PC" duration="00:00:00.0926129" startTime="2011-11-07T01:01:50.0567785-02:00" endTime="2011-11-07T01:01:50.1647847-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8c0ae80c-cb7b-4d05-88f1-b8f71d35bf73">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProjetoFinal.RegistrationFormTest.DisposeTest threw exception: 
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.</Message>
+          <StackTrace>   em PROJETO_FINAL_LC.RegistrationForm_Accessor.Dispose(Boolean disposing)
+   em TestProjetoFinal.RegistrationFormTest.DisposeTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\RegistrationFormTest.cs:linha 89
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="39ee27fb-ea45-4b4b-86d1-6015b122666e" testId="1e631b0f-d661-8b44-2a4d-95e1d54a04c5" testName="EvaluetionMethodInfoConstructorTest" computerName="IGORNB-PC" duration="00:00:00.0013130" startTime="2011-11-07T01:01:50.1907861-02:00" endTime="2011-11-07T01:01:50.1987866-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="39ee27fb-ea45-4b4b-86d1-6015b122666e">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   em TestProjetoFinal.EvaluetionMethodInfoTest.EvaluetionMethodInfoConstructorTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\EvaluetionMethodInfoTest.cs:linha 78
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4808603e-e86e-4d2d-ad3f-33dc49b1358e" testId="204a28eb-2032-d2ff-ede1-9b1693e0f8c4" testName="getLoginTest" computerName="IGORNB-PC" duration="00:00:00.0009354" startTime="2011-11-07T01:01:50.2057870-02:00" endTime="2011-11-07T01:01:50.2147875-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4808603e-e86e-4d2d-ad3f-33dc49b1358e">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   em TestProjetoFinal.UserTest.getLoginTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\UserTest.cs:linha 111
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c3a1039e-bdb1-4828-b0e2-0949493c492a" testId="20d2bdbc-66bc-2f79-5c59-b9641b27a087" testName="InitializeComponentTest" computerName="IGORNB-PC" duration="00:00:00.0564843" startTime="2011-11-07T01:01:50.2207879-02:00" endTime="2011-11-07T01:01:50.2847915-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c3a1039e-bdb1-4828-b0e2-0949493c492a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.ConsultFormTest.InitializeComponentTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\ConsultFormTest.cs:linha 114
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="054680b1-360c-4566-b7d1-b67e9ec6b282" testId="235e5b87-15ee-c0bd-ee94-2b7b7aac716a" testName="VideoConstructorTest" computerName="IGORNB-PC" duration="00:00:00.0012506" startTime="2011-11-07T01:01:50.2927920-02:00" endTime="2011-11-07T01:01:50.3067928-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="054680b1-360c-4566-b7d1-b67e9ec6b282">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   em TestProjetoFinal.VideoTest.VideoConstructorTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\VideoTest.cs:linha 82
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ec6a3a54-7ee7-40cb-9757-8b6b9e37b77a" testId="249a2159-d11b-c1dd-6e0d-e750bf504d29" testName="MainForm_LoadTest" computerName="IGORNB-PC" duration="00:00:00.0327279" startTime="2011-11-07T01:01:50.3207936-02:00" endTime="2011-11-07T01:01:50.3657962-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ec6a3a54-7ee7-40cb-9757-8b6b9e37b77a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.MainFormTest.MainForm_LoadTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\MainFormTest.cs:linha 113
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="89d09d4e-f5fa-45cd-b5d3-68bff1845e53" testId="27e6085a-9d94-d6fe-e1ed-ab3bf53aed5e" testName="btnAddScreening_ClickTest" computerName="IGORNB-PC" duration="00:00:00.1872160" startTime="2011-11-07T01:01:50.3697964-02:00" endTime="2011-11-07T01:01:50.5638075-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="89d09d4e-f5fa-45cd-b5d3-68bff1845e53">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.MainFormTest.btnAddScreening_ClickTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\MainFormTest.cs:linha 141
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ee64fae8-c78a-43cb-9c25-f812b5d24114" testId="34974b1b-5ad4-4c92-bf73-ce7323eb4b6b" testName="RegistrationForm_ShownTest" computerName="IGORNB-PC" duration="00:00:00.0021549" startTime="2011-11-07T01:01:50.5648075-02:00" endTime="2011-11-07T01:01:50.5768082-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ee64fae8-c78a-43cb-9c25-f812b5d24114">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProjetoFinal.RegistrationFormTest.RegistrationForm_ShownTest threw exception: 
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.</Message>
+          <StackTrace>   em PROJETO_FINAL_LC.RegistrationForm_Accessor.RegistrationForm_Shown(Object sender, EventArgs e)
+   em TestProjetoFinal.RegistrationFormTest.RegistrationForm_ShownTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\RegistrationFormTest.cs:linha 132
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="745eb8fb-f9f3-4de7-9717-ccad05297456" testId="3738a06c-82da-5f67-8c7b-6bd53e1000bf" testName="createTheUserTest" computerName="IGORNB-PC" duration="00:00:00.0026184" startTime="2011-11-07T01:01:50.5788083-02:00" endTime="2011-11-07T01:01:50.5878089-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="745eb8fb-f9f3-4de7-9717-ccad05297456">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProjetoFinal.RegistrationFormTest.createTheUserTest threw exception: 
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.</Message>
+          <StackTrace>   em PROJETO_FINAL_LC.RegistrationForm_Accessor.createTheUser()
+   em TestProjetoFinal.RegistrationFormTest.createTheUserTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\RegistrationFormTest.cs:linha 177
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cd361a37-94c3-44c0-a629-171d8139e9c3" testId="4623de58-954e-18dc-cc67-a7cced65b82b" testName="LoginForm_LoadTest" computerName="IGORNB-PC" duration="00:00:00.0090452" startTime="2011-11-07T01:01:50.5918091-02:00" endTime="2011-11-07T01:01:50.6068099-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cd361a37-94c3-44c0-a629-171d8139e9c3">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.LoginFormTest.LoginForm_LoadTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\LoginFormTest.cs:linha 113
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="13e72d42-935f-42ba-8217-a147b3cb28ff" testId="4b0b8f3e-a29f-d865-1219-4110c30edd7c" testName="UserConstructorTest" computerName="IGORNB-PC" duration="00:00:00.0009026" startTime="2011-11-07T01:01:50.6088101-02:00" endTime="2011-11-07T01:01:50.6218108-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="13e72d42-935f-42ba-8217-a147b3cb28ff">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   em TestProjetoFinal.UserTest.UserConstructorTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\UserTest.cs:linha 77
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="79af4240-1f90-4e8f-8ba4-c7dfc0122b5c" testId="4ddece84-9b72-d38b-ac6f-57260319bc39" testName="cbbHigherLimit_SelectedIndexChangedTest" computerName="IGORNB-PC" duration="00:00:00.0026836" startTime="2011-11-07T01:01:50.6268111-02:00" endTime="2011-11-07T01:01:50.6348115-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="79af4240-1f90-4e8f-8ba4-c7dfc0122b5c">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProjetoFinal.RegistrationFormTest.cbbHigherLimit_SelectedIndexChangedTest threw exception: 
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.</Message>
+          <StackTrace>   em PROJETO_FINAL_LC.RegistrationForm_Accessor.cbbHigherLimit_SelectedIndexChanged(Object sender, EventArgs e)
+   em TestProjetoFinal.RegistrationFormTest.cbbHigherLimit_SelectedIndexChangedTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\RegistrationFormTest.cs:linha 162
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ec67ac97-784e-4b98-8b17-6f4893a3b8c6" testId="5835c392-3294-9db4-2b86-4df080373a2b" testName="setEvaluetionMethodInfoTest" computerName="IGORNB-PC" duration="00:00:00.0012972" startTime="2011-11-07T01:01:50.6398118-02:00" endTime="2011-11-07T01:01:50.6478123-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ec67ac97-784e-4b98-8b17-6f4893a3b8c6">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.UserTest.setEvaluetionMethodInfoTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\UserTest.cs:linha 146
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="927716ac-89c0-46d9-8ec1-0689bf9800c5" testId="58575564-1881-a085-1d4d-f83f776e8907" testName="MainForm_ShownTest" computerName="IGORNB-PC" duration="00:00:04.3658818" startTime="2011-11-07T01:01:50.6508125-02:00" endTime="2011-11-07T01:01:55.0290629-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="927716ac-89c0-46d9-8ec1-0689bf9800c5">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.MainFormTest.MainForm_ShownTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\MainFormTest.cs:linha 127
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="adba4f7b-e868-4f4d-b232-255a6307797d" testId="6323854b-7abf-f001-1533-068d25eb8bc3" testName="RegistrationForm_LoadTest" computerName="IGORNB-PC" duration="00:00:00.0277328" startTime="2011-11-07T01:01:55.0510641-02:00" endTime="2011-11-07T01:01:55.0850661-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="adba4f7b-e868-4f4d-b232-255a6307797d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProjetoFinal.RegistrationFormTest.RegistrationForm_LoadTest threw exception: 
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.</Message>
+          <StackTrace>   em PROJETO_FINAL_LC.RegistrationForm_Accessor.RegistrationForm_Load(Object sender, EventArgs e)
+   em TestProjetoFinal.RegistrationFormTest.RegistrationForm_LoadTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\RegistrationFormTest.cs:linha 117
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4598a6fb-6c41-4107-a193-a60be6626d76" testId="63c565ea-3ba0-d746-d43d-3f78984f6131" testName="getEvaluetionMethodInfoTest" computerName="IGORNB-PC" duration="00:00:00.0011011" startTime="2011-11-07T01:01:55.0960667-02:00" endTime="2011-11-07T01:01:55.1040672-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4598a6fb-6c41-4107-a193-a60be6626d76">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   em TestProjetoFinal.UserTest.getEvaluetionMethodInfoTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\UserTest.cs:linha 94
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7f98e439-6ee1-4cf0-86c1-884dce9f7d4f" testId="64659578-cfc2-19b6-3433-44d5ee4ec407" testName="UpdateConsultTypeInfoTest" computerName="IGORNB-PC" duration="00:00:00.0322291" startTime="2011-11-07T01:01:55.1120676-02:00" endTime="2011-11-07T01:01:55.1500698-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7f98e439-6ee1-4cf0-86c1-884dce9f7d4f">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProjetoFinal.ConsultFormTest.UpdateConsultTypeInfoTest threw exception: 
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.</Message>
+          <StackTrace>   em PROJETO_FINAL_LC.ConsultForm_Accessor.UpdateConsultTypeInfo(RadioButton selected)
+   em TestProjetoFinal.ConsultFormTest.UpdateConsultTypeInfoTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\ConsultFormTest.cs:linha 126
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ee2fb0e3-233a-4808-94cb-bc57ea4ab291" testId="671111ae-6fd7-9f30-756c-cfb9e34278f4" testName="getLowerLimitTest" computerName="IGORNB-PC" duration="00:00:00.0024928" startTime="2011-11-07T01:01:55.1520699-02:00" endTime="2011-11-07T01:01:55.1630705-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ee2fb0e3-233a-4808-94cb-bc57ea4ab291">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   em TestProjetoFinal.EvaluetionMethodInfoTest.getLowerLimitTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\EvaluetionMethodInfoTest.cs:linha 132
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="34fe1aa8-5055-437a-bd13-e41bd99b724b" testId="672d4cfa-c843-37d6-e02b-5e6bf1942132" testName="MainFormConstructorTest" computerName="IGORNB-PC" duration="00:00:00.0088511" startTime="2011-11-07T01:01:55.1650707-02:00" endTime="2011-11-07T01:01:55.1830717-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34fe1aa8-5055-437a-bd13-e41bd99b724b">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   em TestProjetoFinal.MainFormTest.MainFormConstructorTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\MainFormTest.cs:linha 74
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="337aa116-66d5-4eff-b80b-09152f6e3d39" testId="6a719aaa-1525-00a0-e521-819e52d378ad" testName="MainTest" computerName="IGORNB-PC" duration="00:00:12.8241263" startTime="2011-11-07T01:01:55.1840717-02:00" endTime="2011-11-07T01:02:08.0168057-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="337aa116-66d5-4eff-b80b-09152f6e3d39">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.ProgramTest.MainTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\ProgramTest.cs:linha 75
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a55c8d3a-8f8b-4fe6-b1ad-ddcf76ea3148" testId="6ba5e6fe-6f95-e350-2c2e-bb7aa4cf3c54" testName="LoginForm_ShownTest" computerName="IGORNB-PC" duration="00:00:00.0032342" startTime="2011-11-07T01:02:08.0328067-02:00" endTime="2011-11-07T01:02:08.0498076-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a55c8d3a-8f8b-4fe6-b1ad-ddcf76ea3148">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.LoginFormTest.LoginForm_ShownTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\LoginFormTest.cs:linha 127
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5c798658-86dd-44a4-9fc9-17bf4e89320e" testId="6e4237d1-e23b-e970-2fb3-10e8a4a7cf14" testName="LoginFormConstructorTest" computerName="IGORNB-PC" duration="00:00:00.0030199" startTime="2011-11-07T01:02:08.0538079-02:00" endTime="2011-11-07T01:02:08.0678087-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5c798658-86dd-44a4-9fc9-17bf4e89320e">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   em TestProjetoFinal.LoginFormTest.LoginFormConstructorTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\LoginFormTest.cs:linha 74
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="492efe8b-1145-4ae0-a610-751412dd823a" testId="6fae32ee-c621-b4b2-0c60-b7252807151b" testName="getEvaluetionMethodTest" computerName="IGORNB-PC" duration="00:00:00.0017441" startTime="2011-11-07T01:02:08.0698088-02:00" endTime="2011-11-07T01:02:08.0788093-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="492efe8b-1145-4ae0-a610-751412dd823a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   em TestProjetoFinal.EvaluetionMethodInfoTest.getEvaluetionMethodTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\EvaluetionMethodInfoTest.cs:linha 96
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="72d52b0d-e43c-498f-9d4e-d8e5d66e5763" testId="73ca9578-62b4-59f0-889e-0ad2066afd34" testName="checksIfUserAlreadyExistsTest" computerName="IGORNB-PC" duration="00:00:00.0037301" startTime="2011-11-07T01:02:08.0818095-02:00" endTime="2011-11-07T01:02:08.0938101-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="72d52b0d-e43c-498f-9d4e-d8e5d66e5763">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   em TestProjetoFinal.LoginFormTest.checksIfUserAlreadyExistsTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\LoginFormTest.cs:linha 171
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="50aeb790-f988-407b-b0d2-b315934f17d0" testId="7563c85f-afa5-4718-5c7e-11056048d4a7" testName="btnLogIn_ClickTest" computerName="IGORNB-PC" duration="00:00:02.4940300" startTime="2011-11-07T01:02:08.0968103-02:00" endTime="2011-11-07T01:02:10.5999535-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="50aeb790-f988-407b-b0d2-b315934f17d0">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.LoginFormTest.btnLogIn_ClickTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\LoginFormTest.cs:linha 141
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="51f26ca6-0b03-453a-9384-9b83e7961aa3" testId="78a9e7e0-591d-b27c-5cfb-71c4fe754d6a" testName="InitializeComponentTest" computerName="IGORNB-PC" duration="00:00:00.0042118" startTime="2011-11-07T01:02:10.6099541-02:00" endTime="2011-11-07T01:02:10.6349555-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51f26ca6-0b03-453a-9384-9b83e7961aa3">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.LoginFormTest.InitializeComponentTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\LoginFormTest.cs:linha 99
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2da60b0e-fc3a-499b-aa7f-5b45ad473185" testId="8b8c4ba6-973f-c429-1a88-3e900a2f79f3" testName="getHigherLimitTest" computerName="IGORNB-PC" duration="00:00:00.0012559" startTime="2011-11-07T01:02:10.6379557-02:00" endTime="2011-11-07T01:02:10.6519565-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2da60b0e-fc3a-499b-aa7f-5b45ad473185">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   em TestProjetoFinal.EvaluetionMethodInfoTest.getHigherLimitTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\EvaluetionMethodInfoTest.cs:linha 114
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="784ebac0-7596-4a56-9f06-2dab844d24e9" testId="8c3789b2-c0e9-fa46-3a10-5912e4b6c02e" testName="getUserNameTest" computerName="IGORNB-PC" duration="00:00:00.0037957" startTime="2011-11-07T01:02:10.6569567-02:00" endTime="2011-11-07T01:02:10.6719576-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="784ebac0-7596-4a56-9f06-2dab844d24e9">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;&gt;. Actual:&lt;(null)&gt;. </Message>
+          <StackTrace>   em TestProjetoFinal.LoginFormTest.getUserNameTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\LoginFormTest.cs:linha 196
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a0f4c164-b650-4572-b256-ce44924bd9a3" testId="8e739bc3-d837-bd9d-cb35-79ca4e546f55" testName="btnConsult_ClickTest" computerName="IGORNB-PC" duration="00:00:00.0648116" startTime="2011-11-07T01:02:10.6749578-02:00" endTime="2011-11-07T01:02:10.7509621-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a0f4c164-b650-4572-b256-ce44924bd9a3">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.MainFormTest.btnConsult_ClickTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\MainFormTest.cs:linha 155
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f3c2e1b2-8e2c-48d5-b480-47218b7dd592" testId="94d291cc-d7d4-2a4c-4bf3-103a1d23a660" testName="btnRegisterVideo_ClickTest" computerName="IGORNB-PC" duration="00:00:00.0691535" startTime="2011-11-07T01:02:10.7529622-02:00" endTime="2011-11-07T01:02:10.8289666-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f3c2e1b2-8e2c-48d5-b480-47218b7dd592">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.AddScreeningFormTest.btnRegisterVideo_ClickTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\AddScreeningFormTest.cs:linha 127
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d987f8f2-7a46-40bd-a192-17dbbd18bdf2" testId="96ef4a9f-b758-faf5-0996-9c48b88881fc" testName="InitializeComponentTest" computerName="IGORNB-PC" duration="00:00:00.0391218" startTime="2011-11-07T01:02:10.8309667-02:00" endTime="2011-11-07T01:02:10.8779694-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d987f8f2-7a46-40bd-a192-17dbbd18bdf2">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.AddScreeningFormTest.InitializeComponentTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\AddScreeningFormTest.cs:linha 113
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="76c97282-0034-4816-8001-34c9698e3e70" testId="97d62ba4-e681-dead-82e1-f94bd19f7de1" testName="InitializeComponentTest" computerName="IGORNB-PC" duration="00:00:00.0131076" startTime="2011-11-07T01:02:10.8799695-02:00" endTime="2011-11-07T01:02:10.9009707-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="76c97282-0034-4816-8001-34c9698e3e70">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.MainFormTest.InitializeComponentTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\MainFormTest.cs:linha 99
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="287e199d-7e11-4400-9798-635060917baa" testId="9b35b54b-bc76-9e90-d6e2-b3c937a96aed" testName="ConsultForm_LoadTest" computerName="IGORNB-PC" duration="00:00:00.0262994" startTime="2011-11-07T01:02:10.9029708-02:00" endTime="2011-11-07T01:02:10.9379728-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="287e199d-7e11-4400-9798-635060917baa">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.ConsultFormTest.ConsultForm_LoadTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\ConsultFormTest.cs:linha 89
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d26549d4-ce2d-4492-9fa5-ee8516bc6d7d" testId="a0885cbd-813c-d323-9785-c019c57e161f" testName="AddScreeningForm_LoadTest" computerName="IGORNB-PC" duration="00:00:00.0109234" startTime="2011-11-07T01:02:10.9399729-02:00" endTime="2011-11-07T01:02:10.9589740-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d26549d4-ce2d-4492-9fa5-ee8516bc6d7d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.AddScreeningFormTest.AddScreeningForm_LoadTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\AddScreeningFormTest.cs:linha 88
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="04b5931a-fe80-4b7d-a3ee-4383cbbb674a" testId="b322669e-f5a0-3259-af76-8b524adb5045" testName="SessionConstructorTest" computerName="IGORNB-PC" duration="00:00:00.0014504" startTime="2011-11-07T01:02:10.9609741-02:00" endTime="2011-11-07T01:02:10.9709747-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="04b5931a-fe80-4b7d-a3ee-4383cbbb674a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   em TestProjetoFinal.SessionTest.SessionConstructorTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\SessionTest.cs:linha 78
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="87a528bc-4f8d-4fd5-b63c-70962737a3a8" testId="b7109bd8-d369-c293-7f2d-b187faa7442c" testName="getStepTest" computerName="IGORNB-PC" duration="00:00:00.0013175" startTime="2011-11-07T01:02:10.9729748-02:00" endTime="2011-11-07T01:02:10.9829754-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="87a528bc-4f8d-4fd5-b63c-70962737a3a8">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   em TestProjetoFinal.EvaluetionMethodInfoTest.getStepTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\EvaluetionMethodInfoTest.cs:linha 150
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9bb182d9-7dea-488a-915c-6f41492e84fd" testId="bad33610-3f8d-c60b-1fad-27574a744242" testName="emptyFieldsWarningTest" computerName="IGORNB-PC" duration="00:00:01.1187358" startTime="2011-11-07T01:02:10.9849755-02:00" endTime="2011-11-07T01:02:12.1180403-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9bb182d9-7dea-488a-915c-6f41492e84fd">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.LoginFormTest.emptyFieldsWarningTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\LoginFormTest.cs:linha 183
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="119e5560-e308-48f5-af7a-ac6b06453803" testId="bc4efc4d-d4f6-1b26-9e06-57b983ae4c39" testName="RegistrationFormConstructorTest" computerName="IGORNB-PC" duration="00:00:00.0086558" startTime="2011-11-07T01:02:12.1320411-02:00" endTime="2011-11-07T01:02:12.1470420-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="119e5560-e308-48f5-af7a-ac6b06453803">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   em TestProjetoFinal.RegistrationFormTest.RegistrationFormConstructorTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\RegistrationFormTest.cs:linha 76
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1222d325-8636-4e5c-807c-c764823d420c" testId="bd016f34-6464-3c07-c67f-56d7a952ac71" testName="btnSaveScreening_ClickTest" computerName="IGORNB-PC" duration="00:00:00.0095399" startTime="2011-11-07T01:02:12.1620428-02:00" endTime="2011-11-07T01:02:12.1770437-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1222d325-8636-4e5c-807c-c764823d420c">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.AddScreeningFormTest.btnSaveScreening_ClickTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\AddScreeningFormTest.cs:linha 141
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3aa345e9-2d26-4c9a-8294-05e7e5cdb11b" testId="d8156586-860e-e90d-09ca-8f9c36bfd349" testName="DisposeTest" computerName="IGORNB-PC" duration="00:00:00.0244893" startTime="2011-11-07T01:02:12.1810439-02:00" endTime="2011-11-07T01:02:12.2110456-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3aa345e9-2d26-4c9a-8294-05e7e5cdb11b">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.ConsultFormTest.DisposeTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\ConsultFormTest.cs:linha 102
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c5b3a2b6-a4e0-4ac8-9414-407a8521587b" testId="d8de2281-75d6-adc1-3aca-c18f7a36e43d" testName="btnRegistration_ClickTest" computerName="IGORNB-PC" duration="00:00:00.7164655" startTime="2011-11-07T01:02:12.2140458-02:00" endTime="2011-11-07T01:02:12.9410874-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c5b3a2b6-a4e0-4ac8-9414-407a8521587b">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.LoginFormTest.btnRegistration_ClickTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\LoginFormTest.cs:linha 155
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4acf3052-0cb2-4e9c-9eba-d6976677eedd" testId="da0e9692-ebb1-3f07-3ce6-482bd2c69d5e" testName="DisposeTest" computerName="IGORNB-PC" duration="00:00:00.0133170" startTime="2011-11-07T01:02:12.9850899-02:00" endTime="2011-11-07T01:02:13.0040910-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4acf3052-0cb2-4e9c-9eba-d6976677eedd">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.MainFormTest.DisposeTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\MainFormTest.cs:linha 87
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cf01fef8-dea8-442a-9ed9-37977424355b" testId="dfcd767e-9867-94e0-7bdb-71fd75fa68db" testName="InitializeComponentTest" computerName="IGORNB-PC" duration="00:00:00.0111815" startTime="2011-11-07T01:02:13.0080912-02:00" endTime="2011-11-07T01:02:13.0350928-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf01fef8-dea8-442a-9ed9-37977424355b">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProjetoFinal.RegistrationFormTest.InitializeComponentTest threw exception: 
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.</Message>
+          <StackTrace>   em PROJETO_FINAL_LC.RegistrationForm_Accessor.InitializeComponent()
+   em TestProjetoFinal.RegistrationFormTest.InitializeComponentTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\RegistrationFormTest.cs:linha 102
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="974d8562-c003-48c1-8d69-1991de65e1b5" testId="ef156605-a738-d04c-9010-9b39a84e860b" testName="DisposeTest" computerName="IGORNB-PC" duration="00:00:00.0066767" startTime="2011-11-07T01:02:13.0420932-02:00" endTime="2011-11-07T01:02:13.0560940-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="974d8562-c003-48c1-8d69-1991de65e1b5">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.LoginFormTest.DisposeTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\LoginFormTest.cs:linha 87
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c9a7094b-1e8f-46c4-aebe-a576d994a15f" testId="f3bdd7f3-a607-4e6b-d55b-b12f1443bb08" testName="getUserTest" computerName="IGORNB-PC" duration="00:00:00.0087596" startTime="2011-11-07T01:02:13.0630944-02:00" endTime="2011-11-07T01:02:13.0790953-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9a7094b-1e8f-46c4-aebe-a576d994a15f">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.MainFormTest.getUserTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\MainFormTest.cs:linha 168
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6db5a952-8704-4346-8ba4-11242222c043" testId="f4dff3c1-c204-cb56-e644-3e194e2cd7e3" testName="btnFinishRegistration_ClickTest" computerName="IGORNB-PC" duration="00:00:00.0043714" startTime="2011-11-07T01:02:13.0810954-02:00" endTime="2011-11-07T01:02:13.0950962-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6db5a952-8704-4346-8ba4-11242222c043">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProjetoFinal.RegistrationFormTest.btnFinishRegistration_ClickTest threw exception: 
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.</Message>
+          <StackTrace>   em PROJETO_FINAL_LC.RegistrationForm_Accessor.btnFinishRegistration_Click(Object sender, EventArgs e)
+   em TestProjetoFinal.RegistrationFormTest.btnFinishRegistration_ClickTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\RegistrationFormTest.cs:linha 147
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ecc09948-0779-4ec8-99d2-e501607ca3ff" testId="fdbb5536-24ea-649c-682c-26b07bab9558" testName="rbtnConsultType_CheckedChangedTest" computerName="IGORNB-PC" duration="00:00:01.1893807" startTime="2011-11-07T01:02:13.1030967-02:00" endTime="2011-11-07T01:02:14.3041654-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ecc09948-0779-4ec8-99d2-e501607ca3ff">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   em TestProjetoFinal.ConsultFormTest.rbtnConsultType_CheckedChangedTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\ConsultFormTest.cs:linha 141
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a6ff717a-6108-4a99-85f1-862d235950f2" testId="ff138780-4f5b-f3d9-9033-edf87270246d" testName="AddScreeningFormConstructorTest" computerName="IGORNB-PC" duration="00:00:00.0187585" startTime="2011-11-07T01:02:14.3121658-02:00" endTime="2011-11-07T01:02:14.3371672-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6ff717a-6108-4a99-85f1-862d235950f2">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   em TestProjetoFinal.AddScreeningFormTest.AddScreeningFormConstructorTest() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\TestProjetoFinal\AddScreeningFormTest.cs:linha 74
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

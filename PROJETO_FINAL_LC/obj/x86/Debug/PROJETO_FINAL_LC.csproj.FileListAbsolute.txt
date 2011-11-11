@@ -1,0 +1,15 @@
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\PROJETO_FINAL_LC\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\PROJETO_FINAL_LC\obj\x86\Debug\PROJETO_FINAL_LC.LoginForm.resources
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\PROJETO_FINAL_LC\obj\x86\Debug\PROJETO_FINAL_LC.MainForm.resources
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\PROJETO_FINAL_LC\obj\x86\Debug\PROJETO_FINAL_LC.Properties.Resources.resources
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\PROJETO_FINAL_LC\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\PROJETO_FINAL_LC\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\PROJETO_FINAL_LC\bin\Debug\PROJETO_FINAL_LC.exe
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\PROJETO_FINAL_LC\bin\Debug\PROJETO_FINAL_LC.pdb
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\PROJETO_FINAL_LC\obj\x86\Debug\PROJETO_FINAL_LC.exe
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\PROJETO_FINAL_LC\obj\x86\Debug\PROJETO_FINAL_LC.pdb
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\PROJETO_FINAL_LC\obj\x86\Debug\PROJETO_FINAL_LC.RegistrationForm.resources
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\PROJETO_FINAL_LC\obj\x86\Debug\PROJETO_FINAL_LC.AddScreeningForm.resources
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\PROJETO_FINAL_LC\obj\x86\Debug\PROJETO_FINAL_LC.VideoRegistrationForm.resources
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\PROJETO_FINAL_LC\obj\x86\Debug\PROJETO_FINAL_LC.ConsultForm.resources
+C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\PROJETO_FINAL_LC\bin\Debug\PROJETO_FINAL_LC.exe.config

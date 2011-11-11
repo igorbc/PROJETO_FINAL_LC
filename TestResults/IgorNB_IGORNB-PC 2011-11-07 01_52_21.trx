@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="387e4c77-beac-4a8d-b979-9b7553cfed03" name="IgorNB@IGORNB-PC 2011-11-07 01:52:21" runUser="IgorNB-PC\IgorNB" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="27f7cbb2-2391-46ed-93e5-459bf1a33da9">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="IgorNB_IGORNB-PC 2011-11-07 01_52_21">
+      <DeploymentItem filename="C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\PROJETO_FINAL_LC\bin\Debug\PROJETO_FINAL_LC.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-11-07T01:52:21.2281516-02:00" queuing="2011-11-07T01:52:21.2371521-02:00" start="2011-11-07T01:52:21.2511529-02:00" finish="2011-11-07T01:52:21.8991899-02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="5" executed="5" passed="4" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="updateDurationTest9999inHours" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\projetofinaltest\bin\debug\projetofinaltest.dll" id="9e2f9ad4-480d-979a-0538-0661cb343dc9">
+      <Execution id="e57ef97c-99e4-4692-ae8a-85446fdf4111" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/ProjetoFinalTest/bin/Debug/ProjetoFinalTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjetoFinalTest.VideoRegistrationFormTest, ProjetoFinalTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="updateDurationTest9999inHours" />
+    </UnitTest>
+    <UnitTest name="updateDurationTest0000" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\projetofinaltest\bin\debug\projetofinaltest.dll" id="0d231944-ef91-843d-046c-1095e98bff50">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="01397ec7-42e9-4f9b-b6d9-14583d19f54a" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/ProjetoFinalTest/bin/Debug/ProjetoFinalTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjetoFinalTest.VideoRegistrationFormTest, ProjetoFinalTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="updateDurationTest0000" />
+    </UnitTest>
+    <UnitTest name="updateDurationTestEmptyString" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\projetofinaltest\bin\debug\projetofinaltest.dll" id="7f2c9a66-6cc4-febc-74ff-c48801023902">
+      <Execution id="f2f58834-c0ed-402b-b330-6ca2212c020b" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/ProjetoFinalTest/bin/Debug/ProjetoFinalTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjetoFinalTest.VideoRegistrationFormTest, ProjetoFinalTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="updateDurationTestEmptyString" />
+    </UnitTest>
+    <UnitTest name="updateDurationTest9999" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\projetofinaltest\bin\debug\projetofinaltest.dll" id="c26b9fbe-d79b-9848-869b-de6349d2f609">
+      <Execution id="9a715cbb-08dc-4913-a937-28a25230311d" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/ProjetoFinalTest/bin/Debug/ProjetoFinalTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjetoFinalTest.VideoRegistrationFormTest, ProjetoFinalTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="updateDurationTest9999" />
+    </UnitTest>
+    <UnitTest name="updateDurationTestEmptyString2" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\projetofinaltest\bin\debug\projetofinaltest.dll" id="4eaf43c4-1fd8-7fe5-ba20-26366d3d8de5">
+      <Execution id="5a2693e4-4e5f-4960-b573-295933c1c290" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/ProjetoFinalTest/bin/Debug/ProjetoFinalTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjetoFinalTest.VideoRegistrationFormTest, ProjetoFinalTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="updateDurationTestEmptyString2" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0d231944-ef91-843d-046c-1095e98bff50" executionId="01397ec7-42e9-4f9b-b6d9-14583d19f54a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4eaf43c4-1fd8-7fe5-ba20-26366d3d8de5" executionId="5a2693e4-4e5f-4960-b573-295933c1c290" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7f2c9a66-6cc4-febc-74ff-c48801023902" executionId="f2f58834-c0ed-402b-b330-6ca2212c020b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9e2f9ad4-480d-979a-0538-0661cb343dc9" executionId="e57ef97c-99e4-4692-ae8a-85446fdf4111" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c26b9fbe-d79b-9848-869b-de6349d2f609" executionId="9a715cbb-08dc-4913-a937-28a25230311d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="01397ec7-42e9-4f9b-b6d9-14583d19f54a" testId="0d231944-ef91-843d-046c-1095e98bff50" testName="updateDurationTest0000" computerName="IGORNB-PC" duration="00:00:00.0371374" startTime="2011-11-07T01:52:21.2901551-02:00" endTime="2011-11-07T01:52:21.5501700-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="01397ec7-42e9-4f9b-b6d9-14583d19f54a">
+    </UnitTestResult>
+    <UnitTestResult executionId="5a2693e4-4e5f-4960-b573-295933c1c290" testId="4eaf43c4-1fd8-7fe5-ba20-26366d3d8de5" testName="updateDurationTestEmptyString2" computerName="IGORNB-PC" duration="00:00:00.0300665" startTime="2011-11-07T01:52:21.5561703-02:00" endTime="2011-11-07T01:52:21.5951726-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a2693e4-4e5f-4960-b573-295933c1c290">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;9999&gt;. Actual:&lt;0&gt;. </Message>
+          <StackTrace>   em ProjetoFinalTest.VideoRegistrationFormTest.updateDurationTestEmptyString2() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\ProjetoFinalTest\VideoRegistrationFormTest.cs:linha 116
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f2f58834-c0ed-402b-b330-6ca2212c020b" testId="7f2c9a66-6cc4-febc-74ff-c48801023902" testName="updateDurationTestEmptyString" computerName="IGORNB-PC" duration="00:00:00.0042114" startTime="2011-11-07T01:52:21.6011729-02:00" endTime="2011-11-07T01:52:21.6121735-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2f58834-c0ed-402b-b330-6ca2212c020b">
+    </UnitTestResult>
+    <UnitTestResult executionId="e57ef97c-99e4-4692-ae8a-85446fdf4111" testId="9e2f9ad4-480d-979a-0538-0661cb343dc9" testName="updateDurationTest9999inHours" computerName="IGORNB-PC" duration="00:00:00.0067914" startTime="2011-11-07T01:52:21.6161738-02:00" endTime="2011-11-07T01:52:21.6281744-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e57ef97c-99e4-4692-ae8a-85446fdf4111">
+    </UnitTestResult>
+    <UnitTestResult executionId="9a715cbb-08dc-4913-a937-28a25230311d" testId="c26b9fbe-d79b-9848-869b-de6349d2f609" testName="updateDurationTest9999" computerName="IGORNB-PC" duration="00:00:00.0047223" startTime="2011-11-07T01:52:21.6311746-02:00" endTime="2011-11-07T01:52:21.6411752-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a715cbb-08dc-4913-a937-28a25230311d">
+    </UnitTestResult>
+  </Results>
+</TestRun>

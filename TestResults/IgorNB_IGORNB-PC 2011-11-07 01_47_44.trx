@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="28dd4ba4-6f91-4f6a-8cae-04d2bef2e402" name="IgorNB@IGORNB-PC 2011-11-07 01:47:44" runUser="IgorNB-PC\IgorNB" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="27f7cbb2-2391-46ed-93e5-459bf1a33da9">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="IgorNB_IGORNB-PC 2011-11-07 01_47_44">
+      <DeploymentItem filename="C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\PROJETO_FINAL_LC\bin\Debug\PROJETO_FINAL_LC.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-11-07T01:47:44.7023352-02:00" queuing="2011-11-07T01:47:44.7103357-02:00" start="2011-11-07T01:47:44.7293367-02:00" finish="2011-11-07T01:47:45.0323541-02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="IGORNB-PC" outcome="Warning" timestamp="2011-11-07T01:47:44.7103357-02:00">
+        <Text>Deployment is currently disabled. The deployment item 'PROJETO_FINAL_LC.exe' on test 'ProjetoFinalTest.VideoRegistrationFormTest.updateDurationTest3' was not deployed.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="updateDurationTest3" storage="c:\users\igornb\dropbox\ciencia da computacao\lc\projeto_final_lc\projetofinaltest\bin\debug\projetofinaltest.dll" id="f0a4a7db-fa19-bdeb-a544-a87d3816a36b">
+      <DeploymentItems>
+        <DeploymentItem filename="PROJETO_FINAL_LC.exe" />
+      </DeploymentItems>
+      <Execution id="06f7650f-15a0-4bf1-9825-8bf60bf29032" />
+      <TestMethod codeBase="C:/Users/IgorNB/Dropbox/ciencia da computacao/LC/PROJETO_FINAL_LC/ProjetoFinalTest/bin/Debug/ProjetoFinalTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ProjetoFinalTest.VideoRegistrationFormTest, ProjetoFinalTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="updateDurationTest3" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f0a4a7db-fa19-bdeb-a544-a87d3816a36b" executionId="06f7650f-15a0-4bf1-9825-8bf60bf29032" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="06f7650f-15a0-4bf1-9825-8bf60bf29032" testId="f0a4a7db-fa19-bdeb-a544-a87d3816a36b" testName="updateDurationTest3" computerName="IGORNB-PC" duration="00:00:00.0659978" startTime="2011-11-07T01:47:44.7353371-02:00" endTime="2011-11-07T01:47:45.0103528-02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="06f7650f-15a0-4bf1-9825-8bf60bf29032">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;6039&gt;. Actual:&lt;6038&gt;. </Message>
+          <StackTrace>   em ProjetoFinalTest.VideoRegistrationFormTest.updateDurationTest3() na C:\Users\IgorNB\Dropbox\ciencia da computacao\LC\PROJETO_FINAL_LC\ProjetoFinalTest\VideoRegistrationFormTest.cs:linha 104
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
