@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using System.Data;
 
 namespace PROJETO_FINAL_LC
 {
@@ -62,11 +63,90 @@ namespace PROJETO_FINAL_LC
             return insertVideo(video, null, null);
         }
 
+        public Boolean updateVideo(Video video, Type type, String errorMethod)
+        {
+            int categoryCode, episodeCode;
+
+            //TODO: properly initialize episodeCode by accessing EPISODE table
+
+            categoryCode = getCategoryCode(video.getCategory());
+            episodeCode = 0;
+
+            String getCategoryCodeCommand = "(SELECT code FROM CATEGORY WHERE name = '" +
+                                            video.getCategory() + "')";
+
+
+            String[] originalTitleStrings = new String[2];
+            String[] nationalTitleStrings = new String[2];
+            String[] directorStrings = new String[2];
+            String[] durationStrings = new String[2];
+            String[] yearStrings = new String[2];
+            String[] categoryStrings = new String[2];
+            String[] episodeStrings = new String[2];
+
+            originalTitleStrings[0] = "originalTitle = ";
+            nationalTitleStrings[0] = ", nationalTitle = ";
+            directorStrings[0] = ", director = ";
+            durationStrings[0] = ", duration = ";
+            yearStrings[0] = ", year = ";
+            categoryStrings[0] = ", categoryCode = ";
+            episodeStrings[0] = ", episodeCode = ";
+            
+
+            originalTitleStrings[1] =
+            nationalTitleStrings[1] =
+            directorStrings[1] =
+            durationStrings[1] =
+            yearStrings[1] =
+            categoryStrings[1] =
+            episodeStrings[1] = "NULL";
+
+            if (video.getOriginalTitle().Length != 0)
+            {
+                originalTitleStrings[1] = "'" + video.getOriginalTitle() + "'";
+
+                if (video.getNationalTitle().Length != 0)
+                    nationalTitleStrings[1] = "'" + video.getNationalTitle() + "'";
+            }
+            else
+                nationalTitleStrings[1] = "'" + video.getNationalTitle() + "'";
+
+            if (video.getDirector().Length != 0)
+                directorStrings[1] = "'" + video.getDirector() + "'";
+
+            if (video.getDuration() != 0)
+                durationStrings[1] = video.getDuration().ToString();
+
+            if (video.getYear() != 0)
+                yearStrings[1] =  video.getYear().ToString();
+
+            if (categoryCode != 0)
+                categoryStrings[1] = categoryCode.ToString();
+            
+            if (episodeCode != 0)
+                episodeStrings[1] = episodeCode.ToString();
+
+            String updateVideoString = "UPDATE VIDEO SET " +
+                                                         originalTitleStrings[0] + originalTitleStrings[1] +
+                                                         nationalTitleStrings[0] + nationalTitleStrings[1] +
+                                                         directorStrings[0] + directorStrings[1] +
+                                                         durationStrings[0] + durationStrings[1] +
+                                                         yearStrings[0] + yearStrings[1] +
+                                                         categoryStrings[0] + categoryStrings[1] +
+                                                         episodeStrings[0] + episodeStrings[1] +
+                                                         " WHERE code = " + video.getCode();
+
+            // MessageBox.Show(updateVideoString);
+           
+            return executeNonQuery(updateVideoString, type, errorMethod, "Update video failed.") &&
+                   relateVideoAndTags(video, type, errorMethod);
+        }
+
         public Boolean insertVideo(Video video, Type type, String errorMethod)
         {
             int categoryCode, episodeCode;
 
-            //TODO: properly initialize episodeCode by accessing EPISODE tables
+            //TODO: properly initialize episodeCode by accessing EPISODE table
 
             categoryCode = getCategoryCode(video.getCategory());
             episodeCode = 0;
@@ -247,20 +327,69 @@ namespace PROJETO_FINAL_LC
 
         private Video createVideoFromDataReader(MySqlDataReader dataReader)
         {
-            if (!dataReader.HasRows) return null;
-
+            if (!dataReader.HasRows)
+                return null;
             dataReader.Read();
-            String getCategoryNameCommand = "SELECT name FROM CATEGORY WHERE code = " +
-                              dataReader.GetInt16("categoryCode");
-            String category = executeQuery(getCategoryNameCommand).ToString();
-            MessageBox.Show("Category: " + category);
-            return null;
+
+            int code = dataReader.GetInt16("code");
+            
+            String category;
+            if (!dataReader["categoryCode"].Equals(DBNull.Value))
+                category = getCategory(dataReader.GetInt16("categoryCode"));
+            else
+                category = "";
+
+            String originalTitle;
+            if(!dataReader["originalTitle"].Equals(DBNull.Value))
+                originalTitle = dataReader["originalTitle"].ToString();
+            else
+                originalTitle = "";
+
+            String nationalTitle;
+            if (!dataReader["nationalTitle"].Equals(DBNull.Value))
+                nationalTitle = dataReader["nationalTitle"].ToString();
+            else
+                nationalTitle = "";
+
+            String director;
+            if (!dataReader["director"].Equals(DBNull.Value))
+                director = dataReader["director"].ToString();
+            else
+                director = "";
+
+            int year;
+            if (!dataReader["year"].Equals(DBNull.Value))
+                year = dataReader.GetInt16("year");
+            else
+                year = 0;
+
+            int duration;
+            if (!dataReader["duration"].Equals(DBNull.Value))
+                duration = dataReader.GetInt16("duration");
+            else
+                duration = 0;
+
             String[] tags = new String[0];
 
-            Video video = new Video(dataReader["originalTitle"].ToString(), dataReader["nationalTitle"].ToString(),
-                        dataReader["director"].ToString(),dataReader.GetInt16("year"), dataReader.GetInt16("duration"), 
-                        category, tags);
+            Video video = new Video(code, originalTitle, nationalTitle, director, year, duration, category, tags);
+
+            return video;
             
+        }
+
+        string getCategory(int code)
+        {
+            String res;
+            DaoVideo daoVideo = new DaoVideo();
+            daoVideo.openConnection();
+            MySqlDataReader categoryDataReader = daoVideo.executeQuery(
+                "SELECT name FROM CATEGORY WHERE code = " + code);
+            if (categoryDataReader == null || !categoryDataReader.HasRows)
+                return null;
+            categoryDataReader.Read();
+            res = categoryDataReader.GetString("name");
+            daoVideo.closeConnection();
+            return res;
         }
 
         public List<String> retrieveAllCategories()
@@ -287,7 +416,6 @@ namespace PROJETO_FINAL_LC
             MySqlDataReader dataReader = executeQuery(retrieveTagsCommand);
 
             if (!dataReader.HasRows) return null;
-
             while (dataReader.Read())
             {
                 tags.Add(dataReader["name"].ToString());
@@ -317,6 +445,18 @@ namespace PROJETO_FINAL_LC
             String insertTagString = "INSERT INTO TAG (name) " +
                                           "VALUES('" + tagName + "')";
             return executeNonQuery(insertTagString, type, erroMethodName, "Insert tag failed.");
+        }
+
+        public void populateComboBox(ComboBox cbb, int value)
+        {
+            MySqlDataAdapter dataAdapter = getAdapter("SELECT * FROM VIDEO ORDER BY nationalTitle");
+            DataTable ds = new DataTable();
+            dataAdapter.Fill(ds);
+            cbb.DataSource = ds;
+            cbb.DisplayMember = "nationalTitle";
+            cbb.ValueMember = "code";
+            if (value != 0)
+                cbb.SelectedValue = (object)value;
         }
     }
 }

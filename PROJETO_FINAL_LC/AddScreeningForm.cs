@@ -21,6 +21,11 @@ namespace PROJETO_FINAL_LC
             InitializeComponent();
         }
 
+        public AddScreeningForm()
+        {
+            InitializeComponent();
+        }
+
         private void btnRegisterVideo_Click(object sender, EventArgs e)
         {
             VideoRegistrationForm vrf = new VideoRegistrationForm();
@@ -30,12 +35,32 @@ namespace PROJETO_FINAL_LC
             if (video != null)
             {
                 btnEditVideo.Enabled = true;
+                MessageBox.Show("registro do vídeo");
+                fillCbbVideoName();
                 fillVideoInfo(video);
             }
+            vrf.Dispose();
+        }
+
+        private void btnEditVideo_Click(object sender, EventArgs e)
+        {
+            //TODO: prevent this redundance of code
+            VideoRegistrationForm vrf = new VideoRegistrationForm(video);
+            this.AddOwnedForm(vrf);
+            vrf.ShowDialog();
+            video = vrf.getVideo();
+            if (video != null)
+            {
+                MessageBox.Show("edição de vídeo");
+                fillCbbVideoName();
+                fillVideoInfo(video);
+            }
+            vrf.Dispose();
         }
 
         private void fillVideoInfo(Video video)
         {
+            MessageBox.Show("atualizando labels.");
             String[] tags = new String[0];
             lbNationalTitle.Text = video.getNationalTitle();
             lbOriginalTitle.Text = video.getOriginalTitle();
@@ -54,8 +79,24 @@ namespace PROJETO_FINAL_LC
         private void AddScreeningForm_Load(object sender, EventArgs e)
         {
             this.MinimumSize = this.Size;
+
+            DaoSession daoSession = new DaoSession();
+            daoSession.openConnection(this.GetType(), "sqlErrorHandler");
+            daoSession.createTable(this.GetType(), "sqlErrorHandler");
+            daoSession.closeConnection();
             fillCbbEvaluetion();
+            fillCbbVideoName();
             loadModes();
+        }
+
+
+
+        private void fillCbbVideoName()
+        {
+            DaoVideo daoVideo = new DaoVideo();
+            daoVideo.openConnection(this.GetType(), "sqlErrorHandler");
+            daoVideo.populateComboBox(cbbVideoName, (video != null)? video.getCode(): 0);
+            daoVideo.closeConnection();
         }
 
         private void loadModes()
@@ -107,14 +148,36 @@ namespace PROJETO_FINAL_LC
             }
         }
 
-        private void btnEditVideo_Click(object sender, EventArgs e)
+        public void sqlErrorHandler(Object obj, String message)
         {
-            //TODO: prevent this redundance of code
-            VideoRegistrationForm vrf = new VideoRegistrationForm(video);
-            this.AddOwnedForm(vrf);
-            vrf.ShowDialog();
-            video = vrf.getVideo();
-            if (video != null) fillVideoInfo(video);
+            String errorString = "Um erro aconteceu.";
+            if (obj is Exception)
+            {
+                Exception ex = (Exception)obj;
+                errorString += " " + message + " " + ex.Message;
+            }
+            MessageBox.Show(errorString);
+        }
+
+        private void cbbVideoName_SelectedValueChanged(object sender, EventArgs e)
+        {
+            DaoVideo daoVideo = new DaoVideo();
+            daoVideo.openConnection();
+            if (cbbVideoName.SelectedValue != null)
+            {
+                if (cbbVideoName.SelectedValue is int)
+                {
+                    int selectedVideoCode = (int)cbbVideoName.SelectedValue;
+                    video = daoVideo.getVideoByCode((int)cbbVideoName.SelectedValue);
+                    if (video != null)
+                    {
+                        btnEditVideo.Enabled = true;
+                        MessageBox.Show("selected ... changed");
+                        fillVideoInfo(video);
+                    }
+                }
+            }
+            daoVideo.closeConnection();
         }
 
     }

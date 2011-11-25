@@ -66,6 +66,11 @@ namespace PROJETO_FINAL_LC
             return connection.State.Equals(System.Data.ConnectionState.Open);
         }
 
+        public MySqlDataAdapter getAdapter(String commandString)
+        {
+            return new MySqlDataAdapter(commandString, connection);
+        }
+
         public MySqlDataReader executeQuery(String commandString)
         {
             return executeQuery(commandString, null, null, null);

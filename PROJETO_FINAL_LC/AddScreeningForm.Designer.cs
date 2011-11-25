@@ -125,12 +125,15 @@
             // 
             // cbbVideoName
             // 
+            this.cbbVideoName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbbVideoName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbbVideoName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbVideoName.FormattingEnabled = true;
             this.cbbVideoName.Location = new System.Drawing.Point(333, 51);
             this.cbbVideoName.Name = "cbbVideoName";
             this.cbbVideoName.Size = new System.Drawing.Size(252, 24);
             this.cbbVideoName.TabIndex = 6;
+            this.cbbVideoName.SelectedValueChanged += new System.EventHandler(this.cbbVideoName_SelectedValueChanged);
             // 
             // btnSaveScreening
             // 
@@ -166,7 +169,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(319, 90);
+            this.label5.Location = new System.Drawing.Point(319, 93);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 16);
             this.label5.TabIndex = 9;
@@ -219,11 +222,10 @@
             this.btnAddMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddMode.Image = ((System.Drawing.Image)(resources.GetObject("btnAddMode.Image")));
             this.btnAddMode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddMode.Location = new System.Drawing.Point(591, 97);
+            this.btnAddMode.Location = new System.Drawing.Point(591, 104);
             this.btnAddMode.Name = "btnAddMode";
-            this.btnAddMode.Size = new System.Drawing.Size(176, 39);
+            this.btnAddMode.Size = new System.Drawing.Size(28, 39);
             this.btnAddMode.TabIndex = 12;
-            this.btnAddMode.Text = "Adicionar modo";
             this.btnAddMode.UseVisualStyleBackColor = true;
             // 
             // gbVideoInfo

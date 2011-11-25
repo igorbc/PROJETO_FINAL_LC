@@ -17,6 +17,7 @@ namespace PROJETO_FINAL_LC
         private Video video = null;
         private int duration;
         private Boolean updating = false;
+        private int videoCode = 0;
 
 
         public VideoRegistrationForm()
@@ -29,9 +30,11 @@ namespace PROJETO_FINAL_LC
         {
             if (video != null)
             {
+                videoCode = video.getCode();
                 this.video = video;
                 fillFields();
                 updating = true;
+                btnRegisterVideo.TextAlign = ContentAlignment.MiddleCenter;
                 btnRegisterVideo.Text = "Salvar";
             }
         }
@@ -133,8 +136,7 @@ namespace PROJETO_FINAL_LC
                 year = 0;
             updateDuration();
             getTags();
-
-            video = new Video(tbOriginalTitle.Text, tbNationalTitle.Text, tbDirector.Text,
+            video = new Video(videoCode, tbOriginalTitle.Text, tbNationalTitle.Text, tbDirector.Text,
                     year, duration, cbbCategory.Text, tags);
         }
 
@@ -147,9 +149,19 @@ namespace PROJETO_FINAL_LC
                 createVideo();
                 DaoVideo daoVideo = new DaoVideo();
                 daoVideo.openConnection(this.GetType(), "sqlErrorHandler");
-                if(daoVideo.insertVideo(video, this.GetType(), "sqlErrorHandler"))
-                    MessageBox.Show("Video criado com sucesso!");
+                
+                if (updating)
+                {
                     
+                    if (daoVideo.updateVideo(video, this.GetType(), "sqlErrorHandler"))
+                        MessageBox.Show("Atualizações salvas!");
+                }
+                else
+                {
+                    if (daoVideo.insertVideo(video, this.GetType(), "sqlErrorHandler"))
+                        MessageBox.Show("Video registrado!");
+                }
+
                 daoVideo.closeConnection();
                 this.Close();
             }
