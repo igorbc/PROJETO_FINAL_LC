@@ -152,14 +152,17 @@ namespace PROJETO_FINAL_LC
                 
                 if (updating)
                 {
-                    
                     if (daoVideo.updateVideo(video, this.GetType(), "sqlErrorHandler"))
-                        MessageBox.Show("Atualizações salvas!");
+                    {
+//                        MessageBox.Show("Atualizações salvas!");
+                    }
                 }
                 else
                 {
                     if (daoVideo.insertVideo(video, this.GetType(), "sqlErrorHandler"))
-                        MessageBox.Show("Video registrado!");
+                    {
+//                        MessageBox.Show("Video registrado!");
+                    }
                 }
 
                 daoVideo.closeConnection();

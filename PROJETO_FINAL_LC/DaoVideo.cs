@@ -138,8 +138,8 @@ namespace PROJETO_FINAL_LC
 
             // MessageBox.Show(updateVideoString);
            
-            return executeNonQuery(updateVideoString, type, errorMethod, "Update video failed.") &&
-                   relateVideoAndTags(video, type, errorMethod);
+            return executeNonQuery(updateVideoString, type, errorMethod, "Update video failed.");
+            // && updateVideoTagsRelation(video, type, errorMethod);
         }
 
         public Boolean insertVideo(Video video, Type type, String errorMethod)
@@ -225,9 +225,44 @@ namespace PROJETO_FINAL_LC
                                                          yearStrings[1] + 
                                                          categoryStrings[1] + 
                                                          episodeStrings[1] + ")";
+            Boolean insertionResult =
+                executeNonQuery(insertVideoString, type, errorMethod, "Insert video failed.") &&
+                relateVideoAndTags(video, type, errorMethod);
 
-            return executeNonQuery(insertVideoString, type, errorMethod, "Insert video failed.") &&
-                   relateVideoAndTags(video, type, errorMethod);
+            video.setCode(getLastVideoCode());
+            return insertionResult;
+        }
+
+        private Boolean updateVideoTagsRelation(Video video)
+        {
+            return updateVideoTagsRelation(video, null, null);
+        }
+
+        private Boolean updateVideoTagsRelation(Video video, Type type, String errorMethod)
+        {
+            int videoCode = video.getCode();
+
+            String removeVideo_TagEntries = "DELETE * FROM VIDEO_TAG WHERE videoCode = " + videoCode;
+            executeNonQuery(removeVideo_TagEntries, type, errorMethod, "Failed to update entry on VIDEO_TAG");
+            
+            if (video.getTags().Length == 0)
+                return true;
+
+
+
+            String insertVideo_TagCommand;
+
+            List<int> tagCodes;
+            tagCodes = retrieveAllTagsCodes(video.getTags());
+            
+            foreach (int tagCode in tagCodes)
+            {
+                insertVideo_TagCommand = "INSERT INTO VIDEO_TAG (videoCode, tagCode) VALUES ('" +
+                                    videoCode + "', '" +
+                                    tagCode + "')";
+                executeNonQuery(insertVideo_TagCommand, type, errorMethod, "Failed to update entry on VIDEO_TAG");
+            }
+            return true;
         }
 
         private Boolean relateVideoAndTags(Video video)
@@ -240,6 +275,7 @@ namespace PROJETO_FINAL_LC
             if (video.getTags().Length == 0)
                 return true;
             String insertVideo_TagCommand;
+            
             MySqlDataReader dataReader = executeQuery("SHOW TABLE STATUS LIKE 'VIDEO'", type,
                                          errorMethod, "Failed to get VIDEO table status.");
             if(!dataReader.HasRows)
@@ -369,12 +405,36 @@ namespace PROJETO_FINAL_LC
             else
                 duration = 0;
 
-            String[] tags = new String[0];
-
+            List<String> tagsList = populateTags(code);
+            String[] tags;
+            if(tagsList.Count > 0)
+                tags = tagsList.ToArray();
+            else
+                tags = new String[0];
             Video video = new Video(code, originalTitle, nationalTitle, director, year, duration, category, tags);
 
             return video;
             
+        }
+
+        public List<String> populateTags(int videoCode)
+        {
+            List<String> tags = new List<string>();
+            String retrieveTagsCommand = "SELECT NAME FROM TAG " + 
+                                         "JOIN VIDEO_TAG on TAG.code = VIDEO_TAG.tagCode " +
+                                         "WHERE VIDEO_TAG.videoCode = " + videoCode;
+
+            DaoVideo daoVideo = new DaoVideo();
+            daoVideo.openConnection();
+            MySqlDataReader dataReader = daoVideo.executeQuery(retrieveTagsCommand, this.GetType(), "er", "pfff...");
+
+            if (dataReader != null && dataReader.HasRows)
+                while (dataReader.Read())
+                {
+                    tags.Add(dataReader["name"].ToString());
+                }
+            daoVideo.closeConnection();
+            return tags;
         }
 
         string getCategory(int code)
@@ -457,6 +517,33 @@ namespace PROJETO_FINAL_LC
             cbb.ValueMember = "code";
             if (value != 0)
                 cbb.SelectedValue = (object)value;
+        }
+
+        public int getLastVideoCode()
+        {
+            int lastCode = 0;
+            DaoVideo daoVideo = new DaoVideo();
+            daoVideo.openConnection();
+            MySqlDataReader dataReader = daoVideo.executeQuery("SHOW TABLE STATUS LIKE 'VIDEO'");
+            if (dataReader != null && dataReader.HasRows)
+            {
+                dataReader.Read();
+                lastCode = dataReader.GetInt16("auto_increment") - 1;
+            }
+            daoVideo.closeConnection();
+            return lastCode;
+        }
+
+        public void er(Object obj, String message)
+        {
+            String errorString = "Um erro aconteceu.";
+            if (obj is Exception)
+            {
+                Exception ex = (Exception)obj;
+                errorString += " " + message + " " + ex.Message;
+            }
+            MessageBox.Show(errorString);
+        
         }
     }
 }

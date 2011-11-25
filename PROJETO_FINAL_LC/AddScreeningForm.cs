@@ -35,7 +35,7 @@ namespace PROJETO_FINAL_LC
             if (video != null)
             {
                 btnEditVideo.Enabled = true;
-                MessageBox.Show("registro do vídeo");
+//                MessageBox.Show("registro do vídeo");
                 fillCbbVideoName();
                 fillVideoInfo(video);
             }
@@ -51,7 +51,7 @@ namespace PROJETO_FINAL_LC
             video = vrf.getVideo();
             if (video != null)
             {
-                MessageBox.Show("edição de vídeo");
+//                MessageBox.Show("edição de vídeo");
                 fillCbbVideoName();
                 fillVideoInfo(video);
             }
@@ -60,7 +60,7 @@ namespace PROJETO_FINAL_LC
 
         private void fillVideoInfo(Video video)
         {
-            MessageBox.Show("atualizando labels.");
+            //MessageBox.Show("atualizando labels.");
             String[] tags = new String[0];
             lbNationalTitle.Text = video.getNationalTitle();
             lbOriginalTitle.Text = video.getOriginalTitle();
@@ -172,7 +172,7 @@ namespace PROJETO_FINAL_LC
                     if (video != null)
                     {
                         btnEditVideo.Enabled = true;
-                        MessageBox.Show("selected ... changed");
+ //                       MessageBox.Show("selected ... changed");
                         fillVideoInfo(video);
                     }
                 }

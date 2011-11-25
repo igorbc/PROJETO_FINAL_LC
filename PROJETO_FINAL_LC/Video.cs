@@ -74,5 +74,10 @@ namespace PROJETO_FINAL_LC
         {
             return code;
         }
+
+        public void setCode(int code)
+        {
+            this.code = code;
+        }
     }
 }
