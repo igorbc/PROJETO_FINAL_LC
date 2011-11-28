@@ -54,9 +54,11 @@
             this.gbConsultType = new System.Windows.Forms.GroupBox();
             this.rbtnLastFirstTime = new System.Windows.Forms.RadioButton();
             this.rbtnStatistics = new System.Windows.Forms.RadioButton();
-            this.rbtnTop = new System.Windows.Forms.RadioButton();
-            this.rbtnIndication = new System.Windows.Forms.RadioButton();
+            this.rbtnTopRecomendation = new System.Windows.Forms.RadioButton();
+            this.rbtnSimple = new System.Windows.Forms.RadioButton();
             this.pnlConsultType = new System.Windows.Forms.Panel();
+            this.lbSimple = new System.Windows.Forms.Label();
+            this.tbSimple = new System.Windows.Forms.TextBox();
             this.rtbConsultTypeInfo = new System.Windows.Forms.RichTextBox();
             this.tpGrade = new System.Windows.Forms.TabPage();
             this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
@@ -116,12 +118,6 @@
             this.rbtnRuntimeLesser = new System.Windows.Forms.RadioButton();
             this.rbtnRuntimeGreater = new System.Windows.Forms.RadioButton();
             this.tpDirector = new System.Windows.Forms.TabPage();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -156,6 +152,7 @@
             this.rbAll = new System.Windows.Forms.RadioButton();
             this.rbYear = new System.Windows.Forms.RadioButton();
             this.tcConsultFilters = new System.Windows.Forms.TabControl();
+            this.pnSimple = new System.Windows.Forms.Panel();
             this.gbConsultInfo.SuspendLayout();
             this.gbConsultType.SuspendLayout();
             this.pnlConsultType.SuspendLayout();
@@ -168,7 +165,6 @@
             this.panel6.SuspendLayout();
             this.tpRuntime.SuspendLayout();
             this.tpDirector.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.tpTags.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -176,6 +172,7 @@
             this.tpDateInterval.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tcConsultFilters.SuspendLayout();
+            this.pnSimple.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbConsultInfo
@@ -213,90 +210,90 @@
             this.lbGrade.AutoSize = true;
             this.lbGrade.Location = new System.Drawing.Point(110, 365);
             this.lbGrade.Name = "lbGrade";
-            this.lbGrade.Size = new System.Drawing.Size(52, 16);
+            this.lbGrade.Size = new System.Drawing.Size(82, 16);
             this.lbGrade.TabIndex = 19;
-            this.lbGrade.Text = "label26";
+            this.lbGrade.Text = "não definido";
             // 
             // lbOriginalTitle
             // 
             this.lbOriginalTitle.AutoSize = true;
             this.lbOriginalTitle.Location = new System.Drawing.Point(110, 329);
             this.lbOriginalTitle.Name = "lbOriginalTitle";
-            this.lbOriginalTitle.Size = new System.Drawing.Size(52, 16);
+            this.lbOriginalTitle.Size = new System.Drawing.Size(82, 16);
             this.lbOriginalTitle.TabIndex = 18;
-            this.lbOriginalTitle.Text = "label25";
+            this.lbOriginalTitle.Text = "não definido";
             // 
             // lbNationalTitle
             // 
             this.lbNationalTitle.AutoSize = true;
             this.lbNationalTitle.Location = new System.Drawing.Point(110, 293);
             this.lbNationalTitle.Name = "lbNationalTitle";
-            this.lbNationalTitle.Size = new System.Drawing.Size(52, 16);
+            this.lbNationalTitle.Size = new System.Drawing.Size(82, 16);
             this.lbNationalTitle.TabIndex = 17;
-            this.lbNationalTitle.Text = "label24";
+            this.lbNationalTitle.Text = "não definido";
             // 
             // lbYear
             // 
             this.lbYear.AutoSize = true;
             this.lbYear.Location = new System.Drawing.Point(110, 257);
             this.lbYear.Name = "lbYear";
-            this.lbYear.Size = new System.Drawing.Size(52, 16);
+            this.lbYear.Size = new System.Drawing.Size(82, 16);
             this.lbYear.TabIndex = 16;
-            this.lbYear.Text = "label23";
+            this.lbYear.Text = "não definido";
             // 
             // lbTags
             // 
             this.lbTags.AutoSize = true;
             this.lbTags.Location = new System.Drawing.Point(110, 77);
             this.lbTags.Name = "lbTags";
-            this.lbTags.Size = new System.Drawing.Size(52, 16);
+            this.lbTags.Size = new System.Drawing.Size(82, 16);
             this.lbTags.TabIndex = 15;
-            this.lbTags.Text = "label22";
+            this.lbTags.Text = "não definido";
             // 
             // lbDirector
             // 
             this.lbDirector.AutoSize = true;
             this.lbDirector.Location = new System.Drawing.Point(110, 113);
             this.lbDirector.Name = "lbDirector";
-            this.lbDirector.Size = new System.Drawing.Size(52, 16);
+            this.lbDirector.Size = new System.Drawing.Size(82, 16);
             this.lbDirector.TabIndex = 14;
-            this.lbDirector.Text = "label21";
+            this.lbDirector.Text = "não definido";
             // 
             // lbRuntime
             // 
             this.lbRuntime.AutoSize = true;
             this.lbRuntime.Location = new System.Drawing.Point(110, 149);
             this.lbRuntime.Name = "lbRuntime";
-            this.lbRuntime.Size = new System.Drawing.Size(52, 16);
+            this.lbRuntime.Size = new System.Drawing.Size(82, 16);
             this.lbRuntime.TabIndex = 13;
-            this.lbRuntime.Text = "label20";
+            this.lbRuntime.Text = "não definido";
             // 
             // lbMode
             // 
             this.lbMode.AutoSize = true;
             this.lbMode.Location = new System.Drawing.Point(110, 221);
             this.lbMode.Name = "lbMode";
-            this.lbMode.Size = new System.Drawing.Size(52, 16);
+            this.lbMode.Size = new System.Drawing.Size(82, 16);
             this.lbMode.TabIndex = 12;
-            this.lbMode.Text = "label19";
+            this.lbMode.Text = "não definido";
             // 
             // lbCategory
             // 
             this.lbCategory.AutoSize = true;
             this.lbCategory.Location = new System.Drawing.Point(110, 185);
             this.lbCategory.Name = "lbCategory";
-            this.lbCategory.Size = new System.Drawing.Size(52, 16);
+            this.lbCategory.Size = new System.Drawing.Size(82, 16);
             this.lbCategory.TabIndex = 11;
-            this.lbCategory.Text = "label18";
+            this.lbCategory.Text = "não definido";
             // 
             // lbDateInterval
             // 
             this.lbDateInterval.AutoSize = true;
             this.lbDateInterval.Location = new System.Drawing.Point(110, 41);
             this.lbDateInterval.Name = "lbDateInterval";
-            this.lbDateInterval.Size = new System.Drawing.Size(52, 16);
+            this.lbDateInterval.Size = new System.Drawing.Size(82, 16);
             this.lbDateInterval.TabIndex = 10;
-            this.lbDateInterval.Text = "label17";
+            this.lbDateInterval.Text = "não definido";
             // 
             // label16
             // 
@@ -399,13 +396,14 @@
             this.btnConsult.TabIndex = 2;
             this.btnConsult.Text = "Consultar";
             this.btnConsult.UseVisualStyleBackColor = true;
+            this.btnConsult.Click += new System.EventHandler(this.btnConsult_Click);
             // 
             // gbConsultType
             // 
             this.gbConsultType.Controls.Add(this.rbtnLastFirstTime);
             this.gbConsultType.Controls.Add(this.rbtnStatistics);
-            this.gbConsultType.Controls.Add(this.rbtnTop);
-            this.gbConsultType.Controls.Add(this.rbtnIndication);
+            this.gbConsultType.Controls.Add(this.rbtnTopRecomendation);
+            this.gbConsultType.Controls.Add(this.rbtnSimple);
             this.gbConsultType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbConsultType.Location = new System.Drawing.Point(19, 12);
             this.gbConsultType.Name = "gbConsultType";
@@ -434,35 +432,53 @@
             this.rbtnStatistics.Text = "Estatística";
             this.rbtnStatistics.UseVisualStyleBackColor = true;
             // 
-            // rbtnTop
+            // rbtnTopRecomendation
             // 
-            this.rbtnTop.AutoSize = true;
-            this.rbtnTop.Location = new System.Drawing.Point(164, 40);
-            this.rbtnTop.Name = "rbtnTop";
-            this.rbtnTop.Size = new System.Drawing.Size(51, 20);
-            this.rbtnTop.TabIndex = 1;
-            this.rbtnTop.Text = "Top";
-            this.rbtnTop.UseVisualStyleBackColor = true;
+            this.rbtnTopRecomendation.AutoSize = true;
+            this.rbtnTopRecomendation.Location = new System.Drawing.Point(164, 40);
+            this.rbtnTopRecomendation.Name = "rbtnTopRecomendation";
+            this.rbtnTopRecomendation.Size = new System.Drawing.Size(120, 20);
+            this.rbtnTopRecomendation.TabIndex = 1;
+            this.rbtnTopRecomendation.Text = "Top / Indicação";
+            this.rbtnTopRecomendation.UseVisualStyleBackColor = true;
             // 
-            // rbtnIndication
+            // rbtnSimple
             // 
-            this.rbtnIndication.AutoSize = true;
-            this.rbtnIndication.Location = new System.Drawing.Point(20, 40);
-            this.rbtnIndication.Name = "rbtnIndication";
-            this.rbtnIndication.Size = new System.Drawing.Size(85, 20);
-            this.rbtnIndication.TabIndex = 0;
-            this.rbtnIndication.Text = "Indicação";
-            this.rbtnIndication.UseVisualStyleBackColor = true;
+            this.rbtnSimple.AutoSize = true;
+            this.rbtnSimple.Location = new System.Drawing.Point(20, 40);
+            this.rbtnSimple.Name = "rbtnSimple";
+            this.rbtnSimple.Size = new System.Drawing.Size(75, 20);
+            this.rbtnSimple.TabIndex = 0;
+            this.rbtnSimple.Text = "Simples";
+            this.rbtnSimple.UseVisualStyleBackColor = true;
             // 
             // pnlConsultType
             // 
             this.pnlConsultType.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlConsultType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlConsultType.Controls.Add(this.pnSimple);
             this.pnlConsultType.Controls.Add(this.rtbConsultTypeInfo);
             this.pnlConsultType.Location = new System.Drawing.Point(22, 140);
             this.pnlConsultType.Name = "pnlConsultType";
             this.pnlConsultType.Size = new System.Drawing.Size(346, 201);
             this.pnlConsultType.TabIndex = 4;
+            // 
+            // lbSimple
+            // 
+            this.lbSimple.AutoSize = true;
+            this.lbSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSimple.Location = new System.Drawing.Point(11, 19);
+            this.lbSimple.Name = "lbSimple";
+            this.lbSimple.Size = new System.Drawing.Size(178, 16);
+            this.lbSimple.TabIndex = 2;
+            this.lbSimple.Text = "Digite o que deseja procurar";
+            // 
+            // tbSimple
+            // 
+            this.tbSimple.Location = new System.Drawing.Point(17, 42);
+            this.tbSimple.Name = "tbSimple";
+            this.tbSimple.Size = new System.Drawing.Size(166, 20);
+            this.tbSimple.TabIndex = 1;
             // 
             // rtbConsultTypeInfo
             // 
@@ -472,7 +488,7 @@
             this.rtbConsultTypeInfo.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.rtbConsultTypeInfo.Location = new System.Drawing.Point(3, 3);
             this.rtbConsultTypeInfo.Name = "rtbConsultTypeInfo";
-            this.rtbConsultTypeInfo.Size = new System.Drawing.Size(338, 165);
+            this.rtbConsultTypeInfo.Size = new System.Drawing.Size(338, 193);
             this.rtbConsultTypeInfo.TabIndex = 0;
             this.rtbConsultTypeInfo.Text = "";
             // 
@@ -802,15 +818,15 @@
             this.panel7.Controls.Add(this.button9);
             this.panel7.Controls.Add(this.listBox5);
             this.panel7.Controls.Add(this.button10);
-            this.panel7.Location = new System.Drawing.Point(186, 6);
+            this.panel7.Location = new System.Drawing.Point(7, 6);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(349, 147);
+            this.panel7.Size = new System.Drawing.Size(707, 147);
             this.panel7.TabIndex = 32;
             // 
             // comboBox6
             // 
             this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(11, 22);
+            this.comboBox6.Location = new System.Drawing.Point(188, 24);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(276, 24);
             this.comboBox6.TabIndex = 26;
@@ -819,7 +835,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(8, 3);
+            this.label25.Location = new System.Drawing.Point(185, 5);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(189, 16);
             this.label25.TabIndex = 21;
@@ -827,7 +843,7 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(319, 23);
+            this.button9.Location = new System.Drawing.Point(496, 25);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(21, 21);
             this.button9.TabIndex = 25;
@@ -840,14 +856,14 @@
                         | System.Windows.Forms.AnchorStyles.Left)));
             this.listBox5.FormattingEnabled = true;
             this.listBox5.ItemHeight = 16;
-            this.listBox5.Location = new System.Drawing.Point(11, 52);
+            this.listBox5.Location = new System.Drawing.Point(188, 54);
             this.listBox5.Name = "listBox5";
             this.listBox5.Size = new System.Drawing.Size(319, 84);
             this.listBox5.TabIndex = 22;
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(293, 23);
+            this.button10.Location = new System.Drawing.Point(470, 25);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(21, 21);
             this.button10.TabIndex = 24;
@@ -873,15 +889,15 @@
             this.panel6.Controls.Add(this.button7);
             this.panel6.Controls.Add(this.listBox4);
             this.panel6.Controls.Add(this.button8);
-            this.panel6.Location = new System.Drawing.Point(186, 6);
+            this.panel6.Location = new System.Drawing.Point(7, 6);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(349, 147);
+            this.panel6.Size = new System.Drawing.Size(707, 147);
             this.panel6.TabIndex = 31;
             // 
             // comboBox5
             // 
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(11, 22);
+            this.comboBox5.Location = new System.Drawing.Point(188, 24);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(276, 24);
             this.comboBox5.TabIndex = 26;
@@ -890,7 +906,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(8, 3);
+            this.label20.Location = new System.Drawing.Point(185, 5);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(185, 16);
             this.label20.TabIndex = 21;
@@ -898,7 +914,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(319, 23);
+            this.button7.Location = new System.Drawing.Point(496, 25);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(21, 21);
             this.button7.TabIndex = 25;
@@ -911,14 +927,14 @@
                         | System.Windows.Forms.AnchorStyles.Left)));
             this.listBox4.FormattingEnabled = true;
             this.listBox4.ItemHeight = 16;
-            this.listBox4.Location = new System.Drawing.Point(11, 52);
+            this.listBox4.Location = new System.Drawing.Point(188, 54);
             this.listBox4.Name = "listBox4";
             this.listBox4.Size = new System.Drawing.Size(319, 84);
             this.listBox4.TabIndex = 22;
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(293, 23);
+            this.button8.Location = new System.Drawing.Point(470, 25);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(21, 21);
             this.button8.TabIndex = 24;
@@ -1044,7 +1060,6 @@
             // tpDirector
             // 
             this.tpDirector.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tpDirector.Controls.Add(this.panel2);
             this.tpDirector.Controls.Add(this.panel5);
             this.tpDirector.Location = new System.Drawing.Point(4, 25);
             this.tpDirector.Name = "tpDirector";
@@ -1052,65 +1067,6 @@
             this.tpDirector.Size = new System.Drawing.Size(720, 158);
             this.tpDirector.TabIndex = 2;
             this.tpDirector.Text = "Diretor(a)";
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.comboBox4);
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.listBox2);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Location = new System.Drawing.Point(363, 6);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(347, 147);
-            this.panel2.TabIndex = 31;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(11, 23);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(264, 24);
-            this.comboBox4.TabIndex = 34;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(5, 4);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(255, 16);
-            this.label17.TabIndex = 28;
-            this.label17.Text = "Não dirigido por nenhum destes diretores";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(307, 25);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(21, 21);
-            this.button3.TabIndex = 33;
-            this.button3.Text = "-";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // listBox2
-            // 
-            this.listBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(11, 54);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(307, 84);
-            this.listBox2.TabIndex = 30;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(281, 25);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(21, 21);
-            this.button4.TabIndex = 32;
-            this.button4.Text = "+";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
@@ -1120,15 +1076,15 @@
             this.panel5.Controls.Add(this.button5);
             this.panel5.Controls.Add(this.listBox3);
             this.panel5.Controls.Add(this.button6);
-            this.panel5.Location = new System.Drawing.Point(10, 6);
+            this.panel5.Location = new System.Drawing.Point(7, 6);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(347, 147);
+            this.panel5.Size = new System.Drawing.Size(707, 147);
             this.panel5.TabIndex = 30;
             // 
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(11, 22);
+            this.comboBox3.Location = new System.Drawing.Point(188, 24);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(276, 24);
             this.comboBox3.TabIndex = 26;
@@ -1137,7 +1093,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(8, 3);
+            this.label19.Location = new System.Drawing.Point(185, 5);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(218, 16);
             this.label19.TabIndex = 21;
@@ -1145,7 +1101,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(319, 23);
+            this.button5.Location = new System.Drawing.Point(496, 25);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(21, 21);
             this.button5.TabIndex = 25;
@@ -1158,14 +1114,14 @@
                         | System.Windows.Forms.AnchorStyles.Left)));
             this.listBox3.FormattingEnabled = true;
             this.listBox3.ItemHeight = 16;
-            this.listBox3.Location = new System.Drawing.Point(11, 52);
+            this.listBox3.Location = new System.Drawing.Point(188, 54);
             this.listBox3.Name = "listBox3";
             this.listBox3.Size = new System.Drawing.Size(319, 84);
             this.listBox3.TabIndex = 22;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(293, 23);
+            this.button6.Location = new System.Drawing.Point(470, 25);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(21, 21);
             this.button6.TabIndex = 24;
@@ -1473,6 +1429,16 @@
             this.tcConsultFilters.Size = new System.Drawing.Size(728, 187);
             this.tcConsultFilters.TabIndex = 0;
             // 
+            // pnSimple
+            // 
+            this.pnSimple.Controls.Add(this.tbSimple);
+            this.pnSimple.Controls.Add(this.lbSimple);
+            this.pnSimple.Location = new System.Drawing.Point(72, 105);
+            this.pnSimple.Name = "pnSimple";
+            this.pnSimple.Size = new System.Drawing.Size(200, 74);
+            this.pnSimple.TabIndex = 3;
+            this.pnSimple.Visible = false;
+            // 
             // ConsultForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1507,8 +1473,6 @@
             this.tpRuntime.ResumeLayout(false);
             this.tpRuntime.PerformLayout();
             this.tpDirector.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.tpTags.ResumeLayout(false);
@@ -1521,6 +1485,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tcConsultFilters.ResumeLayout(false);
+            this.pnSimple.ResumeLayout(false);
+            this.pnSimple.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1552,8 +1518,8 @@
         private System.Windows.Forms.GroupBox gbConsultType;
         private System.Windows.Forms.RadioButton rbtnLastFirstTime;
         private System.Windows.Forms.RadioButton rbtnStatistics;
-        private System.Windows.Forms.RadioButton rbtnTop;
-        private System.Windows.Forms.RadioButton rbtnIndication;
+        private System.Windows.Forms.RadioButton rbtnTopRecomendation;
+        private System.Windows.Forms.RadioButton rbtnSimple;
         private System.Windows.Forms.Panel pnlConsultType;
         private System.Windows.Forms.RichTextBox rtbConsultTypeInfo;
         private System.Windows.Forms.TabPage tpGrade;
@@ -1614,12 +1580,6 @@
         private System.Windows.Forms.RadioButton rbtnRuntimeLesser;
         private System.Windows.Forms.RadioButton rbtnRuntimeGreater;
         private System.Windows.Forms.TabPage tpDirector;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label19;
@@ -1654,5 +1614,8 @@
         private System.Windows.Forms.RadioButton rbAll;
         private System.Windows.Forms.RadioButton rbYear;
         private System.Windows.Forms.TabControl tcConsultFilters;
+        private System.Windows.Forms.Label lbSimple;
+        private System.Windows.Forms.TextBox tbSimple;
+        private System.Windows.Forms.Panel pnSimple;
     }
 }

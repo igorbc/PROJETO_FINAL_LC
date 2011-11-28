@@ -72,10 +72,6 @@ namespace PROJETO_FINAL_LC
             categoryCode = getCategoryCode(video.getCategory());
             episodeCode = 0;
 
-            String getCategoryCodeCommand = "(SELECT code FROM CATEGORY WHERE name = '" +
-                                            video.getCategory() + "')";
-
-
             String[] originalTitleStrings = new String[2];
             String[] nationalTitleStrings = new String[2];
             String[] directorStrings = new String[2];
@@ -138,8 +134,8 @@ namespace PROJETO_FINAL_LC
 
             // MessageBox.Show(updateVideoString);
            
-            return executeNonQuery(updateVideoString, type, errorMethod, "Update video failed.");
-            // && updateVideoTagsRelation(video, type, errorMethod);
+            return executeNonQuery(updateVideoString, type, errorMethod, "Update video failed.")
+             && updateVideoTagsRelation(video, type, errorMethod);
         }
 
         public Boolean insertVideo(Video video, Type type, String errorMethod)
@@ -242,7 +238,7 @@ namespace PROJETO_FINAL_LC
         {
             int videoCode = video.getCode();
 
-            String removeVideo_TagEntries = "DELETE * FROM VIDEO_TAG WHERE videoCode = " + videoCode;
+            String removeVideo_TagEntries = "DELETE FROM VIDEO_TAG WHERE videoCode = " + videoCode;
             executeNonQuery(removeVideo_TagEntries, type, errorMethod, "Failed to update entry on VIDEO_TAG");
             
             if (video.getTags().Length == 0)
@@ -332,9 +328,9 @@ namespace PROJETO_FINAL_LC
         
         private int getCategoryCode(String categoryName)
         {
-            String getCatecoryCodeCommand;
-            getCatecoryCodeCommand = "SELECT code FROM CATEGORY WHERE name = '" + categoryName + "'";
-            MySqlDataReader dataReader = executeQuery(getCatecoryCodeCommand);
+            String getCategoryCodeCommand;
+            getCategoryCodeCommand = "SELECT code FROM CATEGORY WHERE name = '" + categoryName + "'";
+            MySqlDataReader dataReader = executeQuery(getCategoryCodeCommand);
             if (!dataReader.HasRows)
             {
                 dataReader.Close();

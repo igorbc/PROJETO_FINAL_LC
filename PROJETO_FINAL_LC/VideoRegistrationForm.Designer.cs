@@ -199,6 +199,7 @@
             // btnAddCategory
             // 
             this.btnAddCategory.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnAddCategory.Enabled = false;
             this.btnAddCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnAddCategory.Image")));
             this.btnAddCategory.Location = new System.Drawing.Point(567, 189);
             this.btnAddCategory.Name = "btnAddCategory";

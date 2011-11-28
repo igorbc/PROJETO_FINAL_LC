@@ -35,7 +35,7 @@ namespace PROJETO_FINAL_LC
 
         private void btnConsult_Click(object sender, EventArgs e)
         {
-            ConsultForm cf = new ConsultForm();
+            ConsultForm cf = new ConsultForm(user);
             this.AddOwnedForm(cf);
             cf.Show();
         }

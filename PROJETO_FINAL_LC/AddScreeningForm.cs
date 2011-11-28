@@ -14,16 +14,31 @@ namespace PROJETO_FINAL_LC
         private Video video = null;
         private User user = null;
         private Session session = null;
-
-        public AddScreeningForm(User user)
-        {
-            this.user = user;
-            InitializeComponent();
-        }
+        private Boolean updating = false;
 
         public AddScreeningForm()
         {
             InitializeComponent();
+        }
+        
+        public AddScreeningForm(User user)
+            : this()
+        {
+            if(user != null ) this.user = user;
+        }
+
+        public AddScreeningForm(User user, Session session)
+            : this (user)
+        {
+            if (session != null)
+            {
+                this.session = session;
+                this.video = session.getVideo();
+                updating = true;
+                fillVideoInfo(video);
+                btnSaveScreening.Text = "Alterar";
+                btnSaveScreening.TextAlign = ContentAlignment.MiddleCenter;
+            }
         }
 
         private void btnRegisterVideo_Click(object sender, EventArgs e)
@@ -80,16 +95,17 @@ namespace PROJETO_FINAL_LC
         {
             this.MinimumSize = this.Size;
 
-            DaoSession daoSession = new DaoSession();
-            daoSession.openConnection(this.GetType(), "sqlErrorHandler");
-            daoSession.createTable(this.GetType(), "sqlErrorHandler");
-            daoSession.closeConnection();
+            if (!updating)
+            {
+                DaoSession daoSession = new DaoSession();
+                daoSession.openConnection(this.GetType(), "sqlErrorHandler");
+                daoSession.createTable(this.GetType(), "sqlErrorHandler");
+                daoSession.closeConnection();
+            }
             fillCbbEvaluetion();
             fillCbbVideoName();
             loadModes();
         }
-
-
 
         private void fillCbbVideoName()
         {
@@ -97,11 +113,6 @@ namespace PROJETO_FINAL_LC
             daoVideo.openConnection(this.GetType(), "sqlErrorHandler");
             daoVideo.populateComboBox(cbbVideoName, (video != null)? video.getCode(): 0);
             daoVideo.closeConnection();
-        }
-
-        private void loadModes()
-        {
-            // load all modes ever used by the user into the cbbMode
         }
 
         private void fillCbbEvaluetion()
@@ -131,8 +142,8 @@ namespace PROJETO_FINAL_LC
             float evaluetion;
             if(!float.TryParse(cbbEvaluetion.Text, out evaluetion))
                 evaluetion = -1;
-
-            session = new Session(video, evaluetion, cbbMode.Text, rtbComment.Text);
+            
+            session = new Session(video, dtpSession.Value, evaluetion, cbbMode.Text, rtbComment.Text);
         }
 
         private void btnSaveScreening_Click(object sender, EventArgs e)
@@ -142,8 +153,24 @@ namespace PROJETO_FINAL_LC
             else
             {
                 createSession();
-                //TODO: insert session into database
-                MessageBox.Show("Sessão criada (não foi inserida ainda...)");
+                DaoSession daoSession = new DaoSession();
+                daoSession.openConnection(this.GetType(), "sqlErrorHandler");
+                
+                if (updating)
+                {
+                    if (daoSession.updateSession(session, this.GetType(), "sqlErrorHandler"))
+                    {
+                        //                        MessageBox.Show("Atualizações salvas!");
+                    }
+                }
+                else
+                {
+                    if (daoSession.insertSession(session, this.GetType(), "sqlErrorHandler"))
+                    {
+                        //                        MessageBox.Show("Video registrado!");
+                    }
+                }
+                daoSession.closeConnection();
                 this.Close();
             }
         }
@@ -168,7 +195,8 @@ namespace PROJETO_FINAL_LC
                 if (cbbVideoName.SelectedValue is int)
                 {
                     int selectedVideoCode = (int)cbbVideoName.SelectedValue;
-                    video = daoVideo.getVideoByCode((int)cbbVideoName.SelectedValue);
+                    if(!updating)
+                        video = daoVideo.getVideoByCode((int)cbbVideoName.SelectedValue);
                     if (video != null)
                     {
                         btnEditVideo.Enabled = true;
@@ -178,6 +206,75 @@ namespace PROJETO_FINAL_LC
                 }
             }
             daoVideo.closeConnection();
+        }
+
+        private Boolean verifyStringToBeAdded(String toBeAdded, IEnumerable<String> alreadyAdded)
+        {
+            if (toBeAdded.Length == 0)
+            {
+                // TODO: take the next line out of here and put them somewher else somehow
+                btnAddMode.Enabled = false;
+                return false;
+            }
+            foreach (String s in alreadyAdded)
+            {
+                if (s.Equals(toBeAdded)) return false;
+            }
+            return true;
+        }
+
+        private Boolean validMode()
+        {
+            foreach (String s in cbbMode.Items)
+            {
+                if (cbbMode.Text.Equals(s))
+                    return true;
+            }
+            return false;
+        }
+
+        private void updateLbMode()
+        {
+            if (validMode())
+            {
+                lbValidMode.Text = "ok";
+                lbValidMode.ForeColor = Color.ForestGreen;
+                btnAddMode.Enabled = false;
+            }
+            else
+            {
+                lbValidMode.Text = "x";
+                lbValidMode.ForeColor = Color.DarkRed;
+                btnAddMode.Enabled = true;
+            }
+        }
+
+        private void btnAddMode_Click(object sender, EventArgs e)
+        {
+            if (verifyStringToBeAdded(cbbMode.Text, cbbMode.Items.Cast<String>()))
+            {
+                DaoSession daoSession = new DaoSession();
+                daoSession.openConnection(this.GetType(), "sqlErrorHandler");
+                daoSession.insertMode(cbbMode.Text, this.GetType(), "sqlErrorHandler");
+                daoSession.closeConnection();
+                loadModes();
+                updateLbMode();
+            }
+            cbbMode.Focus();
+        }
+        
+        private void loadModes()
+        {
+            DaoSession daoSession = new DaoSession();
+            daoSession.openConnection(this.GetType(), "sqlErrorHandler");
+            cbbMode.Items.Clear();
+            cbbMode.Items.AddRange(daoSession.retrieveAllModes().ToArray());
+            daoSession.closeConnection();
+        }
+
+        private void cbbMode_TextChanged(object sender, EventArgs e)
+        {
+            updateLbMode();
         }
 
     }

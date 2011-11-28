@@ -195,7 +195,8 @@ namespace PROJETO_FINAL_LC
         private Boolean verifyStringToBeAdded(String toBeAdded, IEnumerable<String> alreadyAdded)
         {
             if (toBeAdded.Length == 0)
-                return false;
+                 return false;
+ 
             foreach (String s in alreadyAdded)
             {
                 if (s.Equals(toBeAdded)) return false;
@@ -214,6 +215,13 @@ namespace PROJETO_FINAL_LC
 
         private void btnAddTag_Click(object sender, EventArgs e)
         {
+
+            // TODO: make a funcion to comport the next if statement and change the 'stringsToBeAdded' function
+            if (cbbVideoTags.Text.Length == 0)
+            {
+                btnAddCategory.Enabled = false;
+            }
+
             if (verifyStringToBeAdded(cbbVideoTags.Text,lbVideoTags.Items.Cast<String>()))
             {
                 if(!cbbVideoTags.Items.Contains(cbbVideoTags.Text))
@@ -283,11 +291,13 @@ namespace PROJETO_FINAL_LC
             {
                 lbValidCategory.Text = "ok";
                 lbValidCategory.ForeColor = Color.ForestGreen;
+                btnAddCategory.Enabled = false;
             }
             else
             {
                 lbValidCategory.Text = "x";
                 lbValidCategory.ForeColor = Color.DarkRed;
+                btnAddCategory.Enabled = true;
             }
         }
 

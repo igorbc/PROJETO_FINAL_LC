@@ -62,6 +62,9 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.lbValidMode = new System.Windows.Forms.Label();
             this.gbVideoInfo.SuspendLayout();
             this.gbSeries.SuspendLayout();
             this.SuspendLayout();
@@ -177,12 +180,15 @@
             // 
             // cbbMode
             // 
+            this.cbbMode.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbbMode.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbbMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbMode.FormattingEnabled = true;
             this.cbbMode.Location = new System.Drawing.Point(333, 112);
             this.cbbMode.Name = "cbbMode";
             this.cbbMode.Size = new System.Drawing.Size(252, 24);
             this.cbbMode.TabIndex = 10;
+            this.cbbMode.TextChanged += new System.EventHandler(this.cbbMode_TextChanged);
             // 
             // cbbEvaluetion
             // 
@@ -219,14 +225,16 @@
             // btnAddMode
             // 
             this.btnAddMode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddMode.Enabled = false;
             this.btnAddMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddMode.Image = ((System.Drawing.Image)(resources.GetObject("btnAddMode.Image")));
             this.btnAddMode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddMode.Location = new System.Drawing.Point(591, 104);
+            this.btnAddMode.Location = new System.Drawing.Point(591, 109);
             this.btnAddMode.Name = "btnAddMode";
-            this.btnAddMode.Size = new System.Drawing.Size(28, 39);
+            this.btnAddMode.Size = new System.Drawing.Size(28, 28);
             this.btnAddMode.TabIndex = 12;
             this.btnAddMode.UseVisualStyleBackColor = true;
+            this.btnAddMode.Click += new System.EventHandler(this.btnAddMode_Click);
             // 
             // gbVideoInfo
             // 
@@ -447,11 +455,44 @@
             this.label15.TabIndex = 28;
             this.label15.Text = "Título nacional";
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Red;
+            this.label16.Location = new System.Drawing.Point(136, 31);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(13, 16);
+            this.label16.TabIndex = 14;
+            this.label16.Text = "*";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Red;
+            this.label17.Location = new System.Drawing.Point(426, 31);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(13, 16);
+            this.label17.TabIndex = 15;
+            this.label17.Text = "*";
+            // 
+            // lbValidMode
+            // 
+            this.lbValidMode.AutoSize = true;
+            this.lbValidMode.Location = new System.Drawing.Point(368, 95);
+            this.lbValidMode.Name = "lbValidMode";
+            this.lbValidMode.Size = new System.Drawing.Size(0, 13);
+            this.lbValidMode.TabIndex = 16;
+            // 
             // AddScreeningForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(779, 650);
+            this.Controls.Add(this.lbValidMode);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.gbVideoInfo);
             this.Controls.Add(this.btnAddMode);
             this.Controls.Add(this.cbbEvaluetion);
@@ -514,5 +555,8 @@
         private System.Windows.Forms.Label lbDirector;
         private System.Windows.Forms.Label lbOriginalTitle;
         private System.Windows.Forms.Label lbNationalTitle;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lbValidMode;
     }
 }
