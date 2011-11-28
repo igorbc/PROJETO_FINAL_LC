@@ -57,8 +57,9 @@
             this.rbtnTopRecomendation = new System.Windows.Forms.RadioButton();
             this.rbtnSimple = new System.Windows.Forms.RadioButton();
             this.pnlConsultType = new System.Windows.Forms.Panel();
-            this.lbSimple = new System.Windows.Forms.Label();
+            this.pnSimple = new System.Windows.Forms.Panel();
             this.tbSimple = new System.Windows.Forms.TextBox();
+            this.lbSimple = new System.Windows.Forms.Label();
             this.rtbConsultTypeInfo = new System.Windows.Forms.RichTextBox();
             this.tpGrade = new System.Windows.Forms.TabPage();
             this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
@@ -152,10 +153,10 @@
             this.rbAll = new System.Windows.Forms.RadioButton();
             this.rbYear = new System.Windows.Forms.RadioButton();
             this.tcConsultFilters = new System.Windows.Forms.TabControl();
-            this.pnSimple = new System.Windows.Forms.Panel();
             this.gbConsultInfo.SuspendLayout();
             this.gbConsultType.SuspendLayout();
             this.pnlConsultType.SuspendLayout();
+            this.pnSimple.SuspendLayout();
             this.tpGrade.SuspendLayout();
             this.tpTitle.SuspendLayout();
             this.tpAno.SuspendLayout();
@@ -172,7 +173,6 @@
             this.tpDateInterval.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tcConsultFilters.SuspendLayout();
-            this.pnSimple.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbConsultInfo
@@ -463,6 +463,24 @@
             this.pnlConsultType.Size = new System.Drawing.Size(346, 201);
             this.pnlConsultType.TabIndex = 4;
             // 
+            // pnSimple
+            // 
+            this.pnSimple.Controls.Add(this.tbSimple);
+            this.pnSimple.Controls.Add(this.lbSimple);
+            this.pnSimple.Location = new System.Drawing.Point(72, 105);
+            this.pnSimple.Name = "pnSimple";
+            this.pnSimple.Size = new System.Drawing.Size(200, 74);
+            this.pnSimple.TabIndex = 3;
+            this.pnSimple.Visible = false;
+            // 
+            // tbSimple
+            // 
+            this.tbSimple.Location = new System.Drawing.Point(17, 42);
+            this.tbSimple.Name = "tbSimple";
+            this.tbSimple.Size = new System.Drawing.Size(166, 20);
+            this.tbSimple.TabIndex = 1;
+            this.tbSimple.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbSimple_KeyDown);
+            // 
             // lbSimple
             // 
             this.lbSimple.AutoSize = true;
@@ -472,13 +490,6 @@
             this.lbSimple.Size = new System.Drawing.Size(178, 16);
             this.lbSimple.TabIndex = 2;
             this.lbSimple.Text = "Digite o que deseja procurar";
-            // 
-            // tbSimple
-            // 
-            this.tbSimple.Location = new System.Drawing.Point(17, 42);
-            this.tbSimple.Name = "tbSimple";
-            this.tbSimple.Size = new System.Drawing.Size(166, 20);
-            this.tbSimple.TabIndex = 1;
             // 
             // rtbConsultTypeInfo
             // 
@@ -1429,16 +1440,6 @@
             this.tcConsultFilters.Size = new System.Drawing.Size(728, 187);
             this.tcConsultFilters.TabIndex = 0;
             // 
-            // pnSimple
-            // 
-            this.pnSimple.Controls.Add(this.tbSimple);
-            this.pnSimple.Controls.Add(this.lbSimple);
-            this.pnSimple.Location = new System.Drawing.Point(72, 105);
-            this.pnSimple.Name = "pnSimple";
-            this.pnSimple.Size = new System.Drawing.Size(200, 74);
-            this.pnSimple.TabIndex = 3;
-            this.pnSimple.Visible = false;
-            // 
             // ConsultForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1458,6 +1459,8 @@
             this.gbConsultType.ResumeLayout(false);
             this.gbConsultType.PerformLayout();
             this.pnlConsultType.ResumeLayout(false);
+            this.pnSimple.ResumeLayout(false);
+            this.pnSimple.PerformLayout();
             this.tpGrade.ResumeLayout(false);
             this.tpGrade.PerformLayout();
             this.tpTitle.ResumeLayout(false);
@@ -1485,8 +1488,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tcConsultFilters.ResumeLayout(false);
-            this.pnSimple.ResumeLayout(false);
-            this.pnSimple.PerformLayout();
             this.ResumeLayout(false);
 
         }

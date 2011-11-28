@@ -42,11 +42,10 @@
             this.últimaVezToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ferramentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.completarVideosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.completarSessõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgvLastWatched = new System.Windows.Forms.DataGridView();
-            this.clDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clGrade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbGreetings = new System.Windows.Forms.Label();
             this.btnConsult = new System.Windows.Forms.Button();
             this.tt = new System.Windows.Forms.ToolTip(this.components);
@@ -54,9 +53,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ssMain = new System.Windows.Forms.StatusStrip();
             this.tsslDate = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.completarVideosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.completarSessõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clGrade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Diretor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.msMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLastWatched)).BeginInit();
             this.ssMain.SuspendLayout();
@@ -112,31 +114,31 @@
             // indicaçãoToolStripMenuItem
             // 
             this.indicaçãoToolStripMenuItem.Name = "indicaçãoToolStripMenuItem";
-            this.indicaçãoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.indicaçãoToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.indicaçãoToolStripMenuItem.Text = "Indicação";
             // 
             // topToolStripMenuItem
             // 
             this.topToolStripMenuItem.Name = "topToolStripMenuItem";
-            this.topToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.topToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.topToolStripMenuItem.Text = "Top";
             // 
             // estatísticaToolStripMenuItem
             // 
             this.estatísticaToolStripMenuItem.Name = "estatísticaToolStripMenuItem";
-            this.estatísticaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.estatísticaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.estatísticaToolStripMenuItem.Text = "Estatística";
             // 
             // primeiraVezToolStripMenuItem
             // 
             this.primeiraVezToolStripMenuItem.Name = "primeiraVezToolStripMenuItem";
-            this.primeiraVezToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.primeiraVezToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.primeiraVezToolStripMenuItem.Text = "Primeira vez...";
             // 
             // últimaVezToolStripMenuItem
             // 
             this.últimaVezToolStripMenuItem.Name = "últimaVezToolStripMenuItem";
-            this.últimaVezToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.últimaVezToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.últimaVezToolStripMenuItem.Text = "Última vez...";
             // 
             // ferramentasToolStripMenuItem
@@ -151,8 +153,29 @@
             // backupToolStripMenuItem
             // 
             this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
-            this.backupToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.backupToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.backupToolStripMenuItem.Text = "Backup";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.completarVideosToolStripMenuItem,
+            this.completarSessõesToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
+            this.toolStripMenuItem1.Text = "Assistentes";
+            // 
+            // completarVideosToolStripMenuItem
+            // 
+            this.completarVideosToolStripMenuItem.Name = "completarVideosToolStripMenuItem";
+            this.completarVideosToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.completarVideosToolStripMenuItem.Text = "Completar videos";
+            // 
+            // completarSessõesToolStripMenuItem
+            // 
+            this.completarSessõesToolStripMenuItem.Name = "completarSessõesToolStripMenuItem";
+            this.completarSessõesToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.completarSessõesToolStripMenuItem.Text = "Completar sessões";
             // 
             // dgvLastWatched
             // 
@@ -164,38 +187,17 @@
             this.dgvLastWatched.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLastWatched.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clDate,
+            this.Code,
             this.clTitle,
             this.clType,
-            this.clGrade});
+            this.clGrade,
+            this.Diretor});
             this.dgvLastWatched.Location = new System.Drawing.Point(12, 201);
             this.dgvLastWatched.Name = "dgvLastWatched";
             this.dgvLastWatched.ReadOnly = true;
             this.dgvLastWatched.Size = new System.Drawing.Size(666, 130);
             this.dgvLastWatched.TabIndex = 1;
-            // 
-            // clDate
-            // 
-            this.clDate.HeaderText = "Data";
-            this.clDate.Name = "clDate";
-            this.clDate.ReadOnly = true;
-            // 
-            // clTitle
-            // 
-            this.clTitle.HeaderText = "Título";
-            this.clTitle.Name = "clTitle";
-            this.clTitle.ReadOnly = true;
-            // 
-            // clType
-            // 
-            this.clType.HeaderText = "Tipo";
-            this.clType.Name = "clType";
-            this.clType.ReadOnly = true;
-            // 
-            // clGrade
-            // 
-            this.clGrade.HeaderText = "Avaliação";
-            this.clGrade.Name = "clGrade";
-            this.clGrade.ReadOnly = true;
+            this.dgvLastWatched.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLastWatched_CellContentDoubleClick);
             // 
             // lbGreetings
             // 
@@ -263,26 +265,48 @@
             this.tsslDate.Name = "tsslDate";
             this.tsslDate.Size = new System.Drawing.Size(0, 17);
             // 
-            // toolStripMenuItem1
+            // clDate
             // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.completarVideosToolStripMenuItem,
-            this.completarSessõesToolStripMenuItem});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem1.Text = "Assistentes";
+            this.clDate.DataPropertyName = "date";
+            this.clDate.HeaderText = "Data";
+            this.clDate.Name = "clDate";
+            this.clDate.ReadOnly = true;
             // 
-            // completarVideosToolStripMenuItem
+            // Code
             // 
-            this.completarVideosToolStripMenuItem.Name = "completarVideosToolStripMenuItem";
-            this.completarVideosToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.completarVideosToolStripMenuItem.Text = "Completar videos";
+            this.Code.DataPropertyName = "code";
+            this.Code.HeaderText = "Código";
+            this.Code.Name = "Code";
+            this.Code.ReadOnly = true;
+            this.Code.Visible = false;
             // 
-            // completarSessõesToolStripMenuItem
+            // clTitle
             // 
-            this.completarSessõesToolStripMenuItem.Name = "completarSessõesToolStripMenuItem";
-            this.completarSessõesToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.completarSessõesToolStripMenuItem.Text = "Completar sessões";
+            this.clTitle.DataPropertyName = "nationalTitle";
+            this.clTitle.HeaderText = "Título";
+            this.clTitle.Name = "clTitle";
+            this.clTitle.ReadOnly = true;
+            // 
+            // clType
+            // 
+            this.clType.DataPropertyName = "name";
+            this.clType.HeaderText = "Tipo";
+            this.clType.Name = "clType";
+            this.clType.ReadOnly = true;
+            // 
+            // clGrade
+            // 
+            this.clGrade.DataPropertyName = "evaluetion";
+            this.clGrade.HeaderText = "Avaliação";
+            this.clGrade.Name = "clGrade";
+            this.clGrade.ReadOnly = true;
+            // 
+            // Diretor
+            // 
+            this.Diretor.DataPropertyName = "director";
+            this.Diretor.HeaderText = "Diretor";
+            this.Diretor.Name = "Diretor";
+            this.Diretor.ReadOnly = true;
             // 
             // MainForm
             // 
@@ -316,10 +340,6 @@
 
         private System.Windows.Forms.MenuStrip msMain;
         private System.Windows.Forms.DataGridView dgvLastWatched;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clTitle;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clGrade;
         private System.Windows.Forms.Label lbGreetings;
         private System.Windows.Forms.Button btnAddScreening;
         private System.Windows.Forms.ToolTip tt;
@@ -341,6 +361,12 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem completarVideosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem completarSessõesToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Code;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clTitle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clGrade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Diretor;
     }
 }
 

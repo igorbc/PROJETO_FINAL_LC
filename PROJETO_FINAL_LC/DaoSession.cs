@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace PROJETO_FINAL_LC
 {
@@ -23,11 +24,13 @@ namespace PROJETO_FINAL_LC
 
             String createSessionTableString = "CREATE TABLE IF NOT EXISTS SESSION (" +
             "code INTEGER PRIMARY KEY AUTO_INCREMENT, " +
+            "userLogin VARCHAR(30) NOT NULL, " +
             "date DATE NOT NULL, " +
             "videoCode INTEGER NOT NULL, " +
             "evaluetion DECIMAL(5,2), " +
             "modeCode INTEGER, " +
             "comment VARCHAR(2048), " +
+            "FOREIGN KEY (userLogin) references USER(login), " +
             "FOREIGN KEY (videoCode) references VIDEO(code), " +
             "FOREIGN KEY (modeCode) references MODE(code))";
 
@@ -99,6 +102,7 @@ namespace PROJETO_FINAL_LC
 
             String[] dateStrings = new String[2];
             String[] videoCodeStrings = new String[2];
+            String[] userLoginStrings = new String[2];
             String[] evaluetionStrings = new String[2];
             String[] modeStrings = new String[2];
             String[] commentStrings = new String[2];
@@ -117,6 +121,14 @@ namespace PROJETO_FINAL_LC
                 videoCodeStrings[1] = ", " + session.getVideoCode();
             }
             else 
+                return false;
+
+            if (!session.getUserLogin().Equals(""))
+            {
+                userLoginStrings[0] = ", userLogin";
+                userLoginStrings[1] = ", '" + session.getUserLogin() + "'";
+            }
+            else
                 return false;
             
             if (session.getEvaluetion() != -1)
@@ -140,16 +152,18 @@ namespace PROJETO_FINAL_LC
             String insertSessionString = "INSERT INTO SESSION (" +
                                                          dateStrings[0] +
                                                          videoCodeStrings[0] +
+                                                         userLoginStrings[0] + 
                                                          evaluetionStrings[0] +
                                                          modeStrings[0] +
                                                          commentStrings[0] + ") VALUES (" +
                                                          dateStrings[1] +
                                                          videoCodeStrings[1] +
+                                                         userLoginStrings[1] +
                                                          evaluetionStrings[1] +
                                                          modeStrings[1] +
                                                          commentStrings[1] + ")";
 
-            MessageBox.Show(insertSessionString);
+//            MessageBox.Show(insertSessionString);
             Boolean insertionResult =
                 executeNonQuery(insertSessionString, type, errorMethod, "Insert session failed.");
 
@@ -196,6 +210,7 @@ namespace PROJETO_FINAL_LC
         public Session createSessionFromDataReader(MySqlDataReader dr)
         {
             Session session;
+            String userLogin;
             int code = 0;
             DateTime date;
             String dateString;
@@ -205,7 +220,6 @@ namespace PROJETO_FINAL_LC
             
             float evaluetion;
             
-
             if (dr.Equals(DBNull.Value)) return null;
 
             if (!dr["comment"].Equals(DBNull.Value))
@@ -213,6 +227,12 @@ namespace PROJETO_FINAL_LC
             else
                 comment = "";
 
+            if (dr["code"].Equals(DBNull.Value)) return null;
+            code = dr.GetInt32("code");
+
+            if (dr["userLogin"].Equals(DBNull.Value)) return null;
+            userLogin = dr.GetString("userLogin");
+            
             if (!dr["evaluetion"].Equals(DBNull.Value))
                 evaluetion = (float)Convert.ToDouble(dr.GetDecimal("evaluetion"));
             else
@@ -231,8 +251,8 @@ namespace PROJETO_FINAL_LC
             else
                 mode = "";
 
-            session = new Session(video, dateString, evaluetion, mode, comment);
-
+            session = new Session(userLogin, video, dateString, evaluetion, mode, comment);
+            session.setCode(code);
             return session;
         }
 
@@ -251,18 +271,19 @@ namespace PROJETO_FINAL_LC
             return res;
         }
 
-        public List<Session> simpleQuery(String s)
+        public List<Session> simpleQuery(String s, String login)
         {
             List<Session> sessions = new List<Session>();
 
-            String whereString = "SESSION.evaluetion = '" + s + "' OR "
-                               + "SESSION.comment = '" + s + "' OR "
-                               + "VIDEO.nationalTitle = '" + s + "' OR "
-                               + "VIDEO.originalTitle = '" + s + "' OR "
-                               + "VIDEO.director = '" + s + "' OR "
+            String whereString = "SESSION.userLogin = '" + login + "' AND ("
+                               + "SESSION.evaluetion = '" + s + "' OR "
+                               + "SESSION.comment LIKE '%" + s + "%' OR "
+                               + "VIDEO.nationalTitle LIKE '%" + s + "%' OR "
+                               + "VIDEO.originalTitle LIKE '%" + s + "%' OR "
+                               + "VIDEO.director LIKE '%" + s + "%' OR "
                                + "MODE.name = '" + s + "' OR "
                                + "CATEGORY.name = '" + s + "' OR "
-                               + "TAG.name = '" + s + "'";
+                               + "TAG.name = '" + s + "')";
 
             int intS;
             if (int.TryParse(s, out intS))
@@ -272,17 +293,37 @@ namespace PROJETO_FINAL_LC
             }
             
             String simpleQueryString = "SELECT * FROM SESSION "
-                                     + "  JOIN MODE ON SESSION.modeCode = MODE.code "
-                                     + "  JOIN VIDEO ON SESSION.videoCode = VIDEO.code "
-                                     + "  JOIN CATEGORY ON VIDEO.categoryCode = CATEGORY.code "
-                                     + "  JOIN VIDEO_TAG ON VIDEO.code = VIDEO_TAG.videoCode "
-                                     + "  JOIN TAG ON VIDEO_TAG.tagCode = TAG.code "
-                                     + " WHERE " + whereString + " GROUP BY SESSION.code";
+                                     + "JOIN MODE ON SESSION.modeCode = MODE.code "
+                                     + "JOIN VIDEO ON SESSION.videoCode = VIDEO.code "
+                                     + "JOIN CATEGORY ON VIDEO.categoryCode = CATEGORY.code "
+                                     + "JOIN VIDEO_TAG ON VIDEO.code = VIDEO_TAG.videoCode "
+                                     + "JOIN TAG ON VIDEO_TAG.tagCode = TAG.code "
+                                     + "WHERE " + whereString + " GROUP BY SESSION.code";
  //           MessageBox.Show(simpleQueryString);
 
 
-            MySqlDataReader dataReader = executeQuery(simpleQueryString, this.GetType(), "er", "erro na instrução cheia de joins...");
+            MySqlDataReader dataReader = executeQuery(simpleQueryString, this.GetType(),
+                "er", "Erro na intrução de consulta simples.");
 
+            return getSessionsFromDataReader(dataReader);
+        }
+
+        public Session getSessionByCode(int code)
+        {
+            Session session = null;
+            String getSessionByCodeString = "SELECT * FROM SESSION WHERE code = " + code;
+            MySqlDataReader dr = executeQuery(getSessionByCodeString);
+            if(dr != null && dr.HasRows)
+            {
+                dr.Read();
+                session = createSessionFromDataReader(dr);
+            }
+            return session;
+        }
+
+        private List<Session> getSessionsFromDataReader(MySqlDataReader dataReader)
+        {
+            List<Session> sessions = new List<Session>();
             if (dataReader == null || !dataReader.HasRows)
                 return null;
 
@@ -290,8 +331,28 @@ namespace PROJETO_FINAL_LC
             {
                 sessions.Add(createSessionFromDataReader(dataReader));
             }
-
             return sessions;
+        }
+
+        public void populateDataGridView(DataGridView dgv, String login)
+        {
+            List<Session> sessions = new List<Session>();
+            String queryString = "SELECT "
+                               + "SESSION.code, date, nationalTitle, evaluetion, director, CATEGORY.name "
+                               + "FROM SESSION, VIDEO, CATEGORY, USER "
+                               + "WHERE "
+                               + "SESSION.videoCode = VIDEO.code AND "
+                               + "SESSION.userLogin = '" + login + "' AND "
+                               + "VIDEO.categoryCode = CATEGORY.code "
+                               + "GROUP BY SESSION.code "
+                               + "ORDER BY date";
+    
+            MySqlDataAdapter dataAdapter = getAdapter(queryString);
+            if (dataAdapter.Equals(DBNull.Value)) return;            
+
+            DataTable ds = new DataTable();
+            dataAdapter.Fill(ds);
+            dgv.DataSource = ds;
         }
     }
 }

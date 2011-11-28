@@ -144,7 +144,7 @@ namespace PROJETO_FINAL_LC
         {
             DaoSession daoSession = new DaoSession();
             daoSession.openConnection();
-            List<Session> sessions = daoSession.simpleQuery(tbSimple.Text);
+            List<Session> sessions = daoSession.simpleQuery(tbSimple.Text, user.getLogin());
             daoSession.closeConnection();
 
             String output = "";
@@ -158,6 +158,14 @@ namespace PROJETO_FINAL_LC
                     asf.Dispose();
                 }
             MessageBox.Show(output);
+        }
+
+        private void tbSimple_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                simpleQuery();
+            }
         }
 
     }

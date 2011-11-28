@@ -13,6 +13,7 @@ namespace PROJETO_FINAL_LC
     {
 
         private User user = null;
+        private List<Session> sessions = null;
 
         public MainForm()
         {
@@ -52,6 +53,48 @@ namespace PROJETO_FINAL_LC
             {
                 ssMain.Items.Add("Usuário: " + user.getName());
 
+                DaoSession daoSession = new DaoSession();
+                daoSession.openConnection(this.GetType(), "sqlErrorHandler");
+                daoSession.createTable(this.GetType(), "sqlErrorHandler");
+                daoSession.closeConnection();
+
+                fillDataGridView();
+            }
+        }
+
+        private void fillDataGridView()
+        {
+            DaoSession daoSession = new DaoSession();
+            daoSession.openConnection();
+            daoSession.populateDataGridView(dgvLastWatched, user.getLogin());
+            daoSession.closeConnection();
+        }
+
+        public void sqlErrorHandler(Object obj, String message)
+        {
+            String errorString = "Um erro aconteceu.";
+            if (obj is Exception)
+            {
+                Exception ex = (Exception)obj;
+                errorString += " " + message + " " + ex.Message;
+            }
+            MessageBox.Show(errorString);
+        }
+
+        private void dgvLastWatched_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            String codeString = dgvLastWatched.Rows[e.RowIndex].Cells["code"].FormattedValue.ToString();
+            
+            DaoSession daoSession = new DaoSession();
+            daoSession.openConnection();
+            Session s = daoSession.getSessionByCode(int.Parse(codeString));
+            daoSession.closeConnection();
+
+            if (s != null)
+            {
+                AddScreeningForm asf = new AddScreeningForm(user, s);
+                asf.ShowDialog();
+                asf.Dispose();
             }
         }
 

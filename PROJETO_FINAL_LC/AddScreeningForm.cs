@@ -35,6 +35,7 @@ namespace PROJETO_FINAL_LC
                 this.session = session;
                 this.video = session.getVideo();
                 updating = true;
+                rtbComment.Text = session.getComment();
                 fillVideoInfo(video);
                 btnSaveScreening.Text = "Alterar";
                 btnSaveScreening.TextAlign = ContentAlignment.MiddleCenter;
@@ -95,13 +96,6 @@ namespace PROJETO_FINAL_LC
         {
             this.MinimumSize = this.Size;
 
-            if (!updating)
-            {
-                DaoSession daoSession = new DaoSession();
-                daoSession.openConnection(this.GetType(), "sqlErrorHandler");
-                daoSession.createTable(this.GetType(), "sqlErrorHandler");
-                daoSession.closeConnection();
-            }
             fillCbbEvaluetion();
             fillCbbVideoName();
             loadModes();
@@ -142,8 +136,9 @@ namespace PROJETO_FINAL_LC
             float evaluetion;
             if(!float.TryParse(cbbEvaluetion.Text, out evaluetion))
                 evaluetion = -1;
-            
-            session = new Session(video, dtpSession.Value, evaluetion, cbbMode.Text, rtbComment.Text);
+
+            session = new Session(user.getLogin(), video, dtpSession.Value,
+                                  evaluetion, cbbMode.Text, rtbComment.Text);
         }
 
         private void btnSaveScreening_Click(object sender, EventArgs e)

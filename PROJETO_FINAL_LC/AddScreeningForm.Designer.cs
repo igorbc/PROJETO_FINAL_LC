@@ -411,7 +411,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(103, 16);
             this.label11.TabIndex = 32;
-            this.label11.Text = "Palávras-chave";
+            this.label11.Text = "Palavras-chave";
             // 
             // label12
             // 
